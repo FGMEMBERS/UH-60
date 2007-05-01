@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+Bo 105 simulation config.
+************************************************************************
+-->
+
+<PropertyList>
+	<sim>
+		<description>Sikordky UH60 BlackHawk</description>
+		<author>BARANGER Emmanuel, Maik Justus (FDM)</author>
+		<status>beta</status>
+		<license>GPL v2</license>
+
+		<flight-model>yasim</flight-model>
+		<aero>uh60</aero>
+		<fuel-fraction>0.8</fuel-fraction>
+
+		<startup>
+			<splash-texture>Aircraft/UH-60/splash.rgb</splash-texture>
+		</startup>
+
+		<instrumentation>
+			<path>Aircraft/bo105/Instruments/instrumentation.xml</path>
+		</instrumentation>
+
+		<sound>
+			<path>Aircraft/bo105/Sounds/sound.xml</path>
+		</sound>
+
+		<submodels>
+			<serviceable type="bool">true</serviceable>
+			<path>Aircraft/bo105/Models/submodels.xml</path>
+		</submodels>
+
+		<panel>
+			<path>Aircraft/bo105/Instruments/panel.xml</path>
+			<visibility archive="n">false</visibility>
+		</panel>
+
+		<model>
+			<path archive="y">Aircraft/UH-60/Models/uh60.xml</path>
+			<bo105>
+				<variant type="int">0</variant>
+				<emblem type="string"><!-- country specific by default; see bo105.nas --></emblem>
+				<insignia type="string">Emblems/oebh.rgb</insignia>
+				<shadow type="bool">true</shadow>
+				<wiper type="bool">true</wiper>
+				<wire-cutter type="bool">true</wire-cutter>
+				<tail-angle type="int" archive="y">0</tail-angle>
+				<state type="int">0</state>
+				<rotor-step-deg type="float">-1.0</rotor-step-deg>
+
+				<material>
+					<glass>
+						<diffuse>
+							<red>0.2</red>
+							<green>0.2</green>
+							<blue>0.2</blue>
+						</diffuse>
+
+						<ambient>
+							<red>0.2</red>
+							<green>0.2</green>
+							<blue>0.2</blue>
+						</ambient>
+
+						<specular>
+							<red>1.0</red>
+							<green>1.0</green>
+							<blue>1.0</blue>
+						</specular>
+
+						<emission>
+							<red>0.0</red>
+							<green>0.0</green>
+							<blue>0.0</blue>
+						</emission>
+
+						<transparency>
+							<alpha>0.2</alpha>
+						</transparency>
+
+						<shininess>25</shininess>
+					</glass>
+
+					<fuselage>
+						<texture>livery.rgb</texture>
+
+						<diffuse>
+							<red>0.8</red>
+							<green>0.7</green>
+							<blue>0.001</blue>
+						</diffuse>
+
+						<ambient>
+							<red>0.8</red>
+							<green>0.7</green>
+							<blue>0.0</blue>
+						</ambient>
+
+						<specular>
+							<red>0.4</red>
+							<green>0.2</green>
+							<blue>0.0</blue>
+						</specular>
+
+						<emission>
+							<red>0.0</red>
+							<green>0.0</green>
+							<blue>0.0</blue>
+						</emission>
+
+						<transparency>
+							<alpha>1.0</alpha>
+						</transparency>
+
+						<shininess>32</shininess>
+					</fuselage>
+
+					<helmet>
+						<diffuse>
+							<red>0.8</red>
+							<green>0.7</green>
+							<blue>0.001</blue>
+						</diffuse>
+
+						<ambient>
+							<red>0.8</red>
+							<green>0.7</green>
+							<blue>0.0</blue>
+						</ambient>
+
+						<specular>
+							<red>0.4</red>
+							<green>0.2</green>
+							<blue>0.0</blue>
+						</specular>
+
+						<emission>
+							<red>0.0</red>
+							<green>0.0</green>
+							<blue>0.0</blue>
+						</emission>
+
+						<shininess>32</shininess>
+					</helmet>
+
+					<emblem>
+						<texture>empty.rgb</texture>
+
+						<transparency>
+							<alpha>1.0</alpha>
+						</transparency>
+
+						<threshold>0.1</threshold>
+					</emblem>
+				</material>
+
+				<doors>
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">pilot's door</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">copilot's door</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">right backdoor</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">left backdoor</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">right reardoor</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">left reardoor</name>
+					</door>
+				</doors>
+			</bo105>
+		</model>
+
+		<view n="0">
+			<internal archive="y">true</internal>
+			<config>
+				<x-offset-m archive="y">0.706</x-offset-m><!--right-->
+				<y-offset-m archive="y">0.6318</y-offset-m><!--up-->
+				<z-offset-m archive="y">-2.6586</z-offset-m><!--back-->
+				<pitch-offset-deg>-14</pitch-offset-deg>
+			</config>
+		</view>
+
+		<view n="1">
+			<config>
+				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+			</config>
+		</view>
+
+		<view n="2">
+			<config>
+				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+			</config>
+		</view>
+
+		<view n="3">
+			<config>
+				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+			</config>
+		</view>
+
+		<view n="4">
+			<config>
+				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+			</config>
+		</view>
+
+		<view n="5">
+			<config>
+				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+			</config>
+		</view>
+
+		<view n="6">
+			<name>Belly View</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<x-offset-m archive="y">0</x-offset-m>    <!-- right? -->
+				<y-offset-m archive="y">-1</y-offset-m>   <!-- up -->
+				<z-offset-m archive="y">3.5</z-offset-m>  <!-- back -->
+				<pitch-offset-deg>0</pitch-offset-deg>
+				<ground-level-nearplane-m type="double">0.05f</ground-level-nearplane-m>
+				<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+				<default-pitch-deg type="double">-15</default-pitch-deg>
+				<default-heading-deg type="double">0</default-heading-deg>
+				<front-direction-deg type="double">0</front-direction-deg>
+				<front-left-direction-deg type="double">45</front-left-direction-deg>
+				<left-direction-deg type="double">90</left-direction-deg>
+				<back-left-direction-deg type="double">135</back-left-direction-deg>
+				<back-direction-deg type="double">180</back-direction-deg>
+				<back-right-direction-deg type="double">225</back-right-direction-deg>
+				<right-direction-deg type="double">270</right-direction-deg>
+				<front-right-direction-deg type="double">315</front-right-direction-deg>
+				<default-field-of-view-deg>55</default-field-of-view-deg>
+			</config>
+		</view>
+
+		<number-views type="int" archive="y">7</number-views>
+
+		<hud>
+			<enable3d>false</enable3d>
+		</hud>
+
+		<weight n="0">
+			<name>Pilot</name>
+			<weight-lb>180</weight-lb>
+			<max-lb>300</max-lb>
+		</weight>
+
+		<weight n="1">
+			<name>Co-Pilot</name>
+			<weight-lb>180</weight-lb>
+			<max-lb>300</max-lb>
+		</weight>
+
+		<weight n="2">
+			<name>Right Passenger</name>
+			<weight-lb>0</weight-lb>
+			<max-lb>300</max-lb>
+		</weight>
+
+		<weight n="3">
+			<name>Middle Passenger</name>
+			<weight-lb>0</weight-lb>
+			<max-lb>300</max-lb>
+		</weight>
+
+		<weight n="4">
+			<name>Left Passenger</name>
+			<weight-lb>0</weight-lb>
+			<max-lb>300</max-lb>
+		</weight>
+
+		<weight n="5">
+			<name>Load</name>
+			<weight-lb>0</weight-lb>
+			<max-lb>800</max-lb>
+		</weight>
+
+		<help>
+			<title>UH 60 BlackHawk</title>
+			<key>
+				<name>d</name>
+				<desc>Left door</desc>
+			</key>
+			<key>
+				<name>D</name>
+				<desc>Left windows</desc>
+			</key>
+		</help>
+	</sim>
+
+	<controls>
+		<engines>
+			<engine n="0">
+				<magnetos>0</magnetos>
+			</engine>
+		</engines>
+
+		<lighting>
+			<strobe type="bool">true</strobe>
+			<beacon type="bool">true</beacon>
+			<nav-lights type="bool">true</nav-lights>
+		</lighting>
+	</controls>
+
+	<instrumentation>
+		<gsdi>
+			<serviceable type="bool">true</serviceable>
+			<enabled type="bool">true</enabled>
+		</gsdi>
+	</instrumentation>
+
+ <input>
+   <keyboard include="Nasal/uh60-keyboard.xml"/>
+ </input>
+
+ <nasal>
+   <uh60>
+     <file>Aircraft/C130/Nasal/doors.nas</file>
+   </uh60>
+		<bo105>
+			<file>Aircraft/bo105/Models/bo105.nas</file>
+		</bo105>
+ </nasal>
+
+	<rotors>
+		<main>
+			<rpm type="double">0</rpm>
+		</main>
+	</rotors>
+
+</PropertyList>
+
