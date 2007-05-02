@@ -133,16 +133,13 @@
   <stall aoa="0" width="0" peak="1.5"/>
 </hstab>
 
-<!-- left skid -->
-<gear x="-0.80" y="+1.30" z="-1.22" skid="1" compression="0.10" spring="0.8" sfric="0.5" dfric="0.4"/>
-<gear x="-3.15" y="+1.30" z="-1.22" skid="1" compression="0.10" spring="0.8" sfric="0.5" dfric="0.4"/>
 
-<!-- right skid -->
-<gear x="-0.80" y="-1.30" z="-1.22" skid="1" compression="0.10" spring="0.8" sfric="0.5" dfric="0.4"/>
-<gear x="-3.15" y="-1.30" z="-1.22" skid="1" compression="0.10" spring="0.8" sfric="0.5" dfric="0.4"/>
-
-<!-- tail skid -->
-<gear x="-8.03" y="+0.00" z="+0.34" skid="1" compression="0.01" spring="0.1" sfric="1" dfric="1"/>
+<!-- left gear -->
+<gear x="1.15" y="1.98" z="-1.28" compression="0.25" spring="2.2" damp="1.0" dfric="0.50" sfric="0.60"/>
+<!-- right gear -->
+<gear x="1.15" y="-1.98" z="-1.28" compression="0.25" spring="2.2" damp="1.0" dfric="0.50" sfric="0.60"/>
+<!-- tail gear -->
+<gear x="-9.54" y="0" z="-1.20" compression="0.1" spring="3" damp="1.0" dfric="0.50" sfric="0.60"/>
 
 
 <tank x="-2.47" y="+1.36" z=".68" capacity="75"/>
