@@ -231,7 +231,7 @@ Bo 105 simulation config.
 			</config>
 		</view>
 
-		<view n="6">
+		<view n="100">
 			<name>Belly View</name>
 			<type>lookfrom</type>
 			<internal archive="y">true</internal>
@@ -257,8 +257,6 @@ Bo 105 simulation config.
 				<default-field-of-view-deg>55</default-field-of-view-deg>
 			</config>
 		</view>
-
-		<number-views type="int" archive="y">7</number-views>
 
 		<hud>
 			<enable3d>false</enable3d>
