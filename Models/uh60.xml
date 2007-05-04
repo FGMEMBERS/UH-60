@@ -12,38 +12,59 @@
 
 	<animation>
 		<object-name>Cylinder.001</object-name>
-		<object-name>Pilot.001</object-name>
+		<object-name>copilot</object-name>
+		<object-name>Cylinder.005</object-name>
 		<object-name>roueG</object-name>
 		<object-name>roueD</object-name>
-		<object-name>Pilot</object-name>
+		<object-name>pilot</object-name>
+		<object-name>Sphere</object-name>
+		<object-name>Sphere.002</object-name>
+		<object-name>Cylinder.002</object-name>
 		<object-name>rotor</object-name>
 		<object-name>elevator</object-name>
-		<object-name>axeL1</object-name>
-		<object-name>axeL2</object-name>
-		<object-name>axeR1</object-name>
-		<object-name>axeR2</object-name>
-		<object-name>cacheL</object-name>
-		<object-name>cacheR</object-name>
-		<object-name>doorR</object-name>
+		<object-name>axeG1</object-name>
+		<object-name>axeG2</object-name>
+		<object-name>cacheG</object-name>
+		<object-name>axeD1</object-name>
+		<object-name>axeD2</object-name>
+		<object-name>cacheD</object-name>
 		<object-name>doorL</object-name>
-		<object-name>windowL1</object-name>
-		<object-name>windowL2</object-name>
-		<object-name>windowR1</object-name>
-		<object-name>windowR2</object-name>
 		<object-name>glaceL</object-name>
+		<object-name>doorR</object-name>
 		<object-name>glaceR</object-name>
+		<object-name>windowL1</object-name>
 		<object-name>glaceL1</object-name>
+		<object-name>windowL2</object-name>
 		<object-name>glaceL2</object-name>
+		<object-name>windowR1</object-name>
 		<object-name>glaceR1</object-name>
+		<object-name>windowR2</object-name>
 		<object-name>glaceR2</object-name>
-		<object-name>Cylinder.002</object-name>
+		<object-name>pale1</object-name>
+		<object-name>pale2</object-name>
+		<object-name>pale3</object-name>
+		<object-name>pale4</object-name>
 	</animation>
+
+<!-- Pilote invisible depuis le cockpit -->
+  <animation>
+    <type>select</type>
+    <object-name>pilot</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/current-view/view-number</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
 
 <!-- Portes coté gauche -->
  <animation>
    <type>translate</type>
    <object-name>doorL</object-name>
    <object-name>glaceL</object-name>
+   <object-name>doorR</object-name>
+   <object-name>glaceR</object-name>
    <property>/instrumentation/doors/passenger/position-norm</property>
    <factor> 1.70 </factor>
    <axis>
@@ -56,10 +77,10 @@
 <!-- Portes coté gauche -->
  <animation>
    <type>translate</type>
-   <object-name>windowL1</object-name>
    <object-name>windowL2</object-name>
-   <object-name>glaceL1</object-name>
    <object-name>glaceL2</object-name>
+   <object-name>windowR2</object-name>
+   <object-name>glaceR2</object-name>
    <property>/instrumentation/doors/crew/position-norm</property>
    <factor> -0.3 </factor>
    <axis>
@@ -71,8 +92,14 @@
 
  <animation>
    <type>translate</type>
+   <object-name>windowL1</object-name>
+   <object-name>glaceL1</object-name>
    <object-name>windowL2</object-name>
    <object-name>glaceL2</object-name>
+   <object-name>windowR1</object-name>
+   <object-name>glaceR1</object-name>
+   <object-name>windowR2</object-name>
+   <object-name>glaceR2</object-name>
    <property>/instrumentation/doors/crew/position-norm</property>
    <factor> -0.3 </factor>
    <axis>
@@ -113,6 +140,10 @@
  <animation>
   <type>rotate</type>
   <object-name>rotor</object-name>
+  <object-name>pale1</object-name>
+  <object-name>pale2</object-name>
+  <object-name>pale3</object-name>
+  <object-name>pale4</object-name>
   <property>rotors/main/rpm</property>
   <factor>  10.0 </factor>
    <center>
