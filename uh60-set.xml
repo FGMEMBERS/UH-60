@@ -231,6 +231,12 @@ Bo 105 simulation config.
 			</config>
 		</view>
 
+		<view n="6">
+			<config>
+				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+			</config>
+		</view>
+
 		<view n="100">
 			<name>Belly View</name>
 			<type>lookfrom</type>
