@@ -31,12 +31,11 @@ Shift+d : Bays
 
 Thanks
 ======
-
+Maik JUSTUS and Thomas REAGAN for the new FDM
 
 ===============
 BARANGER Emmanuel
-DELRUE   Benjamin
-May 04, 2007. 
+May 20, 2007. 
 
 
 [Français]
@@ -69,10 +68,9 @@ Shift+d : Baie
 
 Remerciements
 =============
-
+Maik JUSTUS et Thomas REAGAN pour le nouveau FDM
 
 ===============
 BARANGER Emmanuel
-DELRUE   Benjamin
-04 Mai 2007.
+20 Mai 2007.
 

@@ -37,6 +37,7 @@
 		<object-name>glaceR1</object-name>
 		<object-name>glaceR2</object-name>
 		<object-name>Cylinder.002</object-name>
+		<object-name>rotortail</object-name>
 	</animation>
 
 <!-- Pilote invisible depuis le cockpit -->
@@ -130,26 +131,80 @@
   </animation>
 
 <!-- Rotation du rotor -->
- <animation>
+<animation>
+  <type>rotate</type>
+  <object-name>pale1</object-name>
+  <object-name>pale2</object-name>
+  <object-name>pale3</object-name>
+  <object-name>pale4</object-name>
+  <property>rotors/main/roll-deg</property>
+  <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+   <center>
+     <x-m> -3.047 </x-m>
+     <y-m>  0.000 </y-m>
+     <z-m>  0.781 </z-m>
+   </center>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>pale1</object-name>
+  <object-name>pale2</object-name>
+  <object-name>pale3</object-name>
+  <object-name>pale4</object-name>
+  <property>rotors/main/yaw-deg</property>
+  <axis>
+    <x>-0.1</x>
+    <y>-0.995</y>
+    <z>0</z>
+  </axis>
+   <center>
+     <x-m> -3.047 </x-m>
+     <y-m>  0.000 </y-m>
+     <z-m>  0.781 </z-m>
+   </center>
+</animation>
+
+<animation>
   <type>rotate</type>
   <object-name>rotor</object-name>
   <object-name>pale1</object-name>
   <object-name>pale2</object-name>
   <object-name>pale3</object-name>
   <object-name>pale4</object-name>
-  <property>rotors/main/rpm</property>
-  <factor>  10.0 </factor>
+  <property>rotors/main/blade[0]/position-deg</property>
    <center>
      <x-m> -3.047 </x-m>
      <y-m>  0.000 </y-m>
      <z-m>  0.781 </z-m>
    </center>
    <axis>
-     <x>  0.000 </x>
+     <x>  -0.0500 </x>
      <y>  0.000 </y>
-     <z>  1.000 </z>
+     <z>  0.998 </z>
    </axis>
- </animation>
+</animation>
+
+<!-- Rotation du rotor de queue -->
+<animation>
+  <type>rotate</type>
+  <object-name>rotortail</object-name>
+  <property>rotors/main/blade[0]/position-deg</property>
+   <center>
+     <x-m> 6.772 </x-m>
+     <y-m> 0.399 </y-m>
+     <z-m> 1.543 </z-m>
+   </center>
+   <axis>
+     <x>  0.000000 </x>
+     <y> -1.568292 </y>
+     <z> -0.601308 </z>
+   </axis>
+</animation>
 
 <!-- Compression -->
  <animation>
@@ -255,7 +310,7 @@
    </center>
    <axis>
      <x>  0.000 </x>
-     <y>  1.000 </y>
+     <y> -1.000 </y>
      <z>  0.000 </z>
    </axis>
  </animation>
@@ -272,7 +327,7 @@
    </center>
    <axis>
      <x>  0.000 </x>
-     <y>  1.000 </y>
+     <y> -1.000 </y>
      <z>  0.000 </z>
    </axis>
  </animation>
