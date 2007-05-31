@@ -7,9 +7,9 @@ Bo 105 simulation config.
 
 <PropertyList>
 	<sim>
-		<description>Sikordky UH60 BlackHawk</description>
+		<description>Sikorsky UH60 BlackHawk</description>
 		<author>BARANGER Emmanuel, Maik Justus (FDM)</author>
-		<status>beta</status>
+		<status>alpha</status>
 		<license>GPL v2</license>
 
 		<flight-model>yasim</flight-model>
