@@ -12,7 +12,7 @@
 
 <!-- rotor data below that is indented further is known good data -->
 
-<rotor name="main" x="-0,07" y="0.0" z="1.86" nx="0.1" ny="0" nz="1." fx="1" fy="0" fz="0" ccw="1"
+<rotor name="main" x="-0.07" y="0.0" z="1.86" nx="0.1" ny="0" nz="1." fx="1" fy="0" fz="0" ccw="1"
   maxcollective="12.8" mincollective="0.2"
   mincyclicele="-9"  maxcyclicele="15"
   mincyclicail="-4" maxcyclicail="4"
