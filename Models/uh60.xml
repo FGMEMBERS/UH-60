@@ -1,49 +1,98 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-	<path>uh60.ac</path>
-	<dump>0</dump>
 
-	<offsets>
-		<x-m>3</x-m>
-		<z-m>1.15</z-m>
-		<pitch-deg>0</pitch-deg>
-	</offsets>
+  <path>uh60.ac</path>
+  <dump>0</dump>
+  <offsets>
+    <x-m>3</x-m>
+    <z-m>1.15</z-m>
+    <pitch-deg>0</pitch-deg>
+  </offsets>
 
-	<animation>
-		<object-name>Cylinder.001</object-name>
-		<object-name>Cylinder.022</object-name>
-		<object-name>pilot</object-name>
-		<object-name>copilot</object-name>
-		<object-name>roueG</object-name>
-		<object-name>roueD</object-name>
-		<object-name>roueA</object-name>
-		<object-name>elevator</object-name>
-		<object-name>doorL</object-name>
-		<object-name>doorR</object-name>
-		<object-name>rotor</object-name>
-		<object-name>pale1</object-name>
-		<object-name>pale2</object-name>
-		<object-name>pale3</object-name>
-		<object-name>pale4</object-name>
-		<object-name>windowL1</object-name>
-		<object-name>windowL2</object-name>
-		<object-name>windowR1</object-name>
-		<object-name>windowR2</object-name>
-		<object-name>glaceL</object-name>
-		<object-name>glaceR</object-name>
-		<object-name>glaceL1</object-name>
-		<object-name>glaceL2</object-name>
-		<object-name>glaceR1</object-name>
-		<object-name>glaceR2</object-name>
-		<object-name>Cylinder.002</object-name>
-		<object-name>rotortail</object-name>
-	</animation>
+  <animation>
+    <object-name>fuselage</object-name>
+    <object-name>interieur</object-name>
+    <object-name>tubes</object-name>
+    <object-name>pilote</object-name>
+    <object-name>copilote</object-name>
+    <object-name>elevator</object-name>
+    <object-name>axeL1</object-name> 
+    <object-name>axeL2</object-name> 
+    <object-name>axeL3</object-name> 
+    <object-name>roueG</object-name>
+    <object-name>cacheL</object-name>
+    <object-name>axeR1</object-name> 
+    <object-name>axeR2</object-name> 
+    <object-name>axeR3</object-name> 
+    <object-name>roueD</object-name>
+    <object-name>cacheR</object-name>
+    <object-name>axeT1</object-name> 
+    <object-name>axeT2</object-name> 
+    <object-name>axeT3</object-name> 
+    <object-name>axeT4</object-name> 
+    <object-name>roueA</object-name>
+    <object-name>doorL</object-name>
+    <object-name>doorR</object-name>
+    <object-name>rails</object-name>
+    <object-name>windowL1</object-name>
+    <object-name>windowL2</object-name>
+    <object-name>windowR1</object-name>
+    <object-name>windowR2</object-name>
+    <object-name>cachetail</object-name>
+    <object-name>rotor</object-name>
 
-<!-- Pilote invisible depuis le cockpit -->
+    <!-- Transparence -->
+    <object-name>vitres</object-name>
+    <object-name>glaceL</object-name>
+    <object-name>glaceR</object-name>
+    <object-name>glaceL1</object-name>
+    <object-name>glaceL2</object-name>
+    <object-name>glaceR1</object-name>
+    <object-name>glaceR2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+    <object-name>glaceL</object-name>
+    <object-name>glaceR</object-name>
+    <object-name>glaceL1</object-name>
+    <object-name>glaceL2</object-name>
+    <object-name>glaceR1</object-name>
+    <object-name>glaceR2</object-name>
+  </animation>
+
+  <!-- Rotor principale -->
+  <model>
+    <path>Aircraft/UH-60/Models/MainRotor/mainrotor.xml</path>
+    <offsets>
+      <x-m> -3.047 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.287 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>  -5.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rotor de queue -->
+  <model>
+    <path>Aircraft/UH-60/Models/TailRotor/tailrotor.xml</path>
+    <offsets>
+      <x-m> 6.772 </x-m>
+      <y-m> 0.379 </y-m>
+      <z-m> 1.535 </z-m>
+      <roll-deg>  -69.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Pilote invisible depuis le cockpit -->
   <animation>
     <type>select</type>
-    <object-name>pilot</object-name>
+    <object-name>pilote</object-name>
     <condition>
       <greater-than>
         <property>sim/current-view/view-number</property>
@@ -52,58 +101,74 @@
     </condition>
   </animation>
 
-<!-- Portes coté gauche -->
- <animation>
-   <type>translate</type>
-   <object-name>doorL</object-name>
-   <object-name>doorR</object-name>
-   <object-name>glaceL</object-name>
-   <object-name>glaceR</object-name>
-   <property>/instrumentation/doors/passenger/position-norm</property>
-   <factor> 1.70 </factor>
-   <axis>
-     <x> 1.000 </x>
-     <y> 0.000 </y>
-     <z> 0.000 </z>
-   </axis>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>rotor</object-name>
+    <property>rotors/main/blade[0]/position-deg</property>
+    <center>
+       <x-m> -3.047 </x-m>
+       <y-m>  0.000 </y-m>
+       <z-m>  0.811 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y>  0.000 </y>
+      <z>  1.000 </z>
+    </axis>
+  </animation>
 
-<!-- Portes coté gauche -->
- <animation>
-   <type>translate</type>
-   <object-name>windowL2</object-name>
-   <object-name>windowR2</object-name>
-   <object-name>glaceL2</object-name>
-   <object-name>glaceR2</object-name>
-   <property>/instrumentation/doors/crew/position-norm</property>
-   <factor> -0.3 </factor>
-   <axis>
-     <x> 1.000 </x>
-     <y> 0.000 </y>
-     <z> 0.000 </z>
-   </axis>
- </animation>
+  <!-- Portes coté gauche -->
+  <animation>
+    <type>translate</type>
+    <object-name>doorL</object-name>
+    <object-name>doorR</object-name>
+    <object-name>glaceL</object-name>
+    <object-name>glaceR</object-name>
+    <property>/instrumentation/doors/passenger/position-norm</property>
+    <factor> 1.70 </factor>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>windowL1</object-name>
-   <object-name>windowL2</object-name>
-   <object-name>windowR1</object-name>
-   <object-name>windowR2</object-name>
-   <object-name>glaceL1</object-name>
-   <object-name>glaceL2</object-name>
-   <object-name>glaceR1</object-name>
-   <object-name>glaceR2</object-name>
-   <property>/instrumentation/doors/crew/position-norm</property>
-   <factor> -0.3 </factor>
-   <axis>
-     <x> 1.000 </x>
-     <y> 0.000 </y>
-     <z> 0.000 </z>
-   </axis>
- </animation>
+  <!-- Portes coté gauche -->
+  <animation>
+    <type>translate</type>
+    <object-name>windowL2</object-name>
+    <object-name>windowR2</object-name>
+    <object-name>glaceL2</object-name>
+    <object-name>glaceR2</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> -0.3 </factor>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
 
-<!-- Gouverne de profondeur -->
+  <animation>
+    <type>translate</type>
+    <object-name>windowL1</object-name>
+    <object-name>windowL2</object-name>
+    <object-name>windowR1</object-name>
+    <object-name>windowR2</object-name>
+    <object-name>glaceL1</object-name>
+    <object-name>glaceL2</object-name>
+    <object-name>glaceR1</object-name>
+    <object-name>glaceR2</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> -0.3 </factor>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de profondeur -->
   <animation>
     <type>rotate</type>
     <object-name>elevator</object-name>
@@ -130,223 +195,147 @@
     </axis>
   </animation>
 
-<!-- Rotation du rotor -->
-<animation>
-  <type>rotate</type>
-  <object-name>pale1</object-name>
-  <object-name>pale2</object-name>
-  <object-name>pale3</object-name>
-  <object-name>pale4</object-name>
-  <property>rotors/main/roll-deg</property>
-  <axis>
-    <x>1</x>
-    <y>0</y>
-    <z>0</z>
-  </axis>
-   <center>
-     <x-m> -3.047 </x-m>
-     <y-m>  0.000 </y-m>
-     <z-m>  0.781 </z-m>
-   </center>
-</animation>
+  <!-- Compression -->
+  <animation>
+    <type>translate</type>
+    <object-name>roueG</object-name>
+    <object-name>axeL1</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind> 1.000 </ind>
+        <dep> 0.300 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
 
-<animation>
-  <type>rotate</type>
-  <object-name>pale1</object-name>
-  <object-name>pale2</object-name>
-  <object-name>pale3</object-name>
-  <object-name>pale4</object-name>
-  <property>rotors/main/yaw-deg</property>
-  <axis>
-    <x>-0.1</x>
-    <y>-0.995</y>
-    <z>0</z>
-  </axis>
-   <center>
-     <x-m> -3.047 </x-m>
-     <y-m>  0.000 </y-m>
-     <z-m>  0.781 </z-m>
-   </center>
-</animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>axeL2</object-name>
+    <object-name>cacheL</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>  1.00 </ind>
+        <dep> -5.00 </dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m> -5.641 </x-m>
+      <y-m> -1.302 </y-m>
+      <z-m> -1.574 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
 
-<animation>
-  <type>rotate</type>
-  <object-name>rotor</object-name>
-  <object-name>pale1</object-name>
-  <object-name>pale2</object-name>
-  <object-name>pale3</object-name>
-  <object-name>pale4</object-name>
-  <property>rotors/main/blade[0]/position-deg</property>
-   <center>
-     <x-m> -3.047 </x-m>
-     <y-m>  0.000 </y-m>
-     <z-m>  0.781 </z-m>
-   </center>
-   <axis>
-     <x>  -0.0500 </x>
-     <y>  0.000 </y>
-     <z>  0.998 </z>
-   </axis>
-</animation>
-
-<!-- Rotation du rotor de queue -->
-<animation>
-  <type>rotate</type>
-  <object-name>rotortail</object-name>
-  <property>rotors/main/blade[0]/position-deg</property>
-   <center>
-     <x-m> 6.772 </x-m>
-     <y-m> 0.399 </y-m>
-     <z-m> 1.543 </z-m>
-   </center>
-   <axis>
-     <x>  0.000000 </x>
-     <y> -1.568292 </y>
-     <z> -0.601308 </z>
-   </axis>
-</animation>
-
-<!-- Compression -->
- <animation>
-   <type>translate</type>
-   <object-name>roueG</object-name>
-   <object-name>axeL1</object-name>
-   <property>gear/gear[0]/compression-norm</property>
-   <interpolation>
-     <entry>
-       <ind> 0.0 </ind>
-       <dep> 0.0 </dep>
-     </entry>
-     <entry>
-       <ind> 1.000 </ind>
-       <dep> 0.300 </dep>
-     </entry>
-   </interpolation>
-   <axis>
-     <x> 0.000 </x>
-     <y> 0.000 </y>
-     <z> 1.000 </z>
-   </axis>
- </animation>
-
- <animation>
-   <type>rotate</type>
-   <object-name>axeL2</object-name>
-   <object-name>cacheL</object-name>
-   <property>gear/gear[0]/compression-norm</property>
-   <interpolation>
-     <entry>
-       <ind> 0.0 </ind>
-       <dep> 0.0 </dep>
-     </entry>
-     <entry>
-       <ind>  1.00 </ind>
-       <dep> -5.00 </dep>
-     </entry>
-   </interpolation>
-   <center>
-     <x-m> -5.641 </x-m>
-     <y-m> -1.302 </y-m>
-     <z-m> -1.574 </z-m>
-   </center>
-   <axis>
-     <x> 0.000 </x>
-     <y> 1.000 </y>
-     <z> 0.000 </z>
-   </axis>
- </animation>
-
- <animation>
-   <type>translate</type>
-   <object-name>roueD</object-name>
-   <object-name>axeR1</object-name>
-   <property>gear/gear[1]/compression-norm</property>
-   <interpolation>
-     <entry>
-       <ind> 0.0 </ind>
-       <dep> 0.0 </dep>
-     </entry>
-     <entry>
-       <ind> 1.000 </ind>
-       <dep> 0.300 </dep>
-     </entry>
-   </interpolation>
-   <axis>
-     <x> 0.000 </x>
-     <y> 0.000 </y>
-     <z> 1.000 </z>
-   </axis>
- </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>roueD</object-name>
+    <object-name>axeR1</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind> 1.000 </ind>
+        <dep> 0.300 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
 	
-<!-- Rotation de la roue avant en fonction de la gouverne de direction -->
- <animation>
-  <type>rotate</type>
-  <object-name>roueA</object-name>
-  <object-name>axeT3</object-name>
-  <property>controls/flight/rudder</property>
-  <factor>  10.0 </factor>
-   <center>
-     <x-m>  4.312 </x-m>
-     <y-m>  0.000 </y-m>
-     <z-m> -1.747 </z-m>
-   </center>
-   <axis>
-     <x>  0.000 </x>
-     <y>  0.000 </y>
-     <z>  1.000 </z>
-   </axis>
- </animation>
+  <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>roueA</object-name>
+    <object-name>axeT3</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>  10.0 </factor>
+     <center>
+       <x-m>  4.312 </x-m>
+       <y-m>  0.000 </y-m>
+       <z-m> -1.747 </z-m>
+     </center>
+     <axis>
+       <x>  0.000 </x>
+       <y>  0.000 </y>
+       <z>  1.000 </z>
+     </axis>
+  </animation>
 
-<!-- Rotation des roues lors du roulage -->
- <animation>
-   <type>spin</type>
-   <object-name>roueG</object-name>
-   <property>gear/gear[0]/rollspeed-ms</property>
-   <factor> 30 </factor>
-   <center>
-     <x-m> -4.172 </x-m>
-     <y-m> -1.520 </y-m>
-     <z-m> -2.047 </z-m>
-   </center>
-   <axis>
-     <x>  0.000 </x>
-     <y> -1.000 </y>
-     <z>  0.000 </z>
-   </axis>
- </animation>
+  <!-- Rotation des roues lors du roulage -->
+  <animation>
+    <type>spin</type>
+    <object-name>roueG</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -4.172 </x-m>
+      <y-m> -1.520 </y-m>
+      <z-m> -2.047 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y> -1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
 
- <animation>
-   <type>spin</type>
-   <object-name>roueD</object-name>
-   <property>gear/gear[1]/rollspeed-ms</property>
-   <factor> 30 </factor>
-   <center>
-     <x-m> -4.172 </x-m>
-     <y-m>  1.520 </y-m>
-     <z-m> -2.047 </z-m>
-   </center>
-   <axis>
-     <x>  0.000 </x>
-     <y> -1.000 </y>
-     <z>  0.000 </z>
-   </axis>
- </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>roueD</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -4.172 </x-m>
+      <y-m>  1.520 </y-m>
+      <z-m> -2.047 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y> -1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
 
- <animation>
-   <type>spin</type>
-   <object-name>roueA</object-name>
-   <property>gear/gear[2]/rollspeed-ms</property>
-   <factor> 30 </factor>
-   <center>
-     <x-m>  4.609 </x-m>
-     <y-m>  0.000 </y-m>
-     <z-m> -2.090 </z-m>
-   </center>
-   <axis>
-     <x>  0.000 </x>
-     <y>  1.000 </y>
-     <z>  0.000 </z>
-   </axis>
- </animation>
+  <animation>
+    <type>spin</type>
+    <object-name>roueA</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  4.609 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.090 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y>  1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
