@@ -98,21 +98,8 @@
     <object-name>blade4</object-name>
     <object-name>propblur4</object-name>
     <object-name>propdisc4</object-name>
-    <property>rotors/main/rpm</property>
-    <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep>  2.0 </dep>
-      </entry>
-      <entry>
-        <ind> 180.0 </ind>
-        <dep>   0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 242.0 </ind>
-        <dep>  -2.0 </dep>
-      </entry>
-    </interpolation>
+    <property>rotors/main/cone-deg</property>
+    <factor> -1 </factor>
     <center>
        <x-m>  6.934 </x-m>
        <y-m> -0.189 </y-m>
@@ -134,21 +121,8 @@
     <object-name>blade3</object-name>
     <object-name>propblur3</object-name>
     <object-name>propdisc3</object-name>
-    <property>rotors/main/rpm</property>
-    <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep>  2.0 </dep>
-      </entry>
-      <entry>
-        <ind> 180.0 </ind>
-        <dep>   0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 242.0 </ind>
-        <dep>  -2.0 </dep>
-      </entry>
-    </interpolation>
+    <property>rotors/main/cone-deg</property>
+    <factor> -1 </factor>
     <center>
        <x-m>  5.081 </x-m>
        <y-m> -0.167 </y-m>
@@ -173,21 +147,8 @@
     <object-name>blade2</object-name>
     <object-name>propblur2</object-name>
     <object-name>propdisc2</object-name>
-    <property>rotors/main/rpm</property>
-    <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep>  3.0 </dep>
-      </entry>
-      <entry>
-        <ind> 180.0 </ind>
-        <dep>   0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 242.0 </ind>
-        <dep>  -2.0 </dep>
-      </entry>
-    </interpolation>
+    <property>rotors/main/cone-deg</property>
+    <factor> -1 </factor>
     <center>
        <x-m>  3.214 </x-m>
        <y-m> -0.164 </y-m>
@@ -216,21 +177,8 @@
     <object-name>propblur1</object-name>
     <object-name>propdisc1</object-name>
     <object-name>axe</object-name>
-    <property>rotors/main/rpm</property>
-    <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep>  3.0 </dep>
-      </entry>
-      <entry>
-        <ind> 180.0 </ind>
-        <dep>   0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 242.0 </ind>
-        <dep>  -2.0 </dep>
-      </entry>
-    </interpolation>
+    <property>rotors/main/cone-deg</property>
+    <factor> -1 </factor>
     <center>
        <x-m> 0.000 </x-m>
        <y-m> 0.000 </y-m>
@@ -239,6 +187,27 @@
     <axis>
       <x> 0.000 </x>
       <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Incidence de la pale -->
+  <animation>
+    <type>rotate</type>
+    <object-name>axe</object-name>
+    <object-name>blade1</object-name>
+    <object-name>blade2</object-name>
+    <object-name>blade3</object-name>
+    <object-name>blade4</object-name>
+    <property>rotors/main/blade/incidence-deg</property>
+    <center>
+       <x-m> 0.000 </x-m>
+       <y-m> 0.000 </y-m>
+       <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
       <z> 0.000 </z>
     </axis>
   </animation>

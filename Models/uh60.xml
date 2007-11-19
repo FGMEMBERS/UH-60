@@ -89,6 +89,45 @@
     </offsets>
   </model>
 
+  <!-- Tableau de bord principal -->
+  <model>
+    <path>Aircraft/UH-60/Models/Panels/panelfront.xml</path>
+    <offsets>
+      <x-m> -6.554 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.746 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>  -30.540 </pitch-deg>
+      <heading-deg>  0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord central -->
+  <model>
+    <path>Aircraft/UH-60/Models/Panels/paneldown.xml</path>
+    <offsets>
+      <x-m> -6.010 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.086 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord plafonnier -->
+  <model>
+    <path>Aircraft/UH-60/Models/Panels/panelup.xml</path>
+    <offsets>
+      <x-m> -5.833 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.085 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
   <!-- Pilote invisible depuis le cockpit -->
   <animation>
     <type>select</type>
