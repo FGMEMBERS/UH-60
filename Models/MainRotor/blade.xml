@@ -98,7 +98,7 @@
     <object-name>blade4</object-name>
     <object-name>propblur4</object-name>
     <object-name>propdisc4</object-name>
-    <property>rotors/main/cone-deg</property>
+    <property>rotors/main/cone4-deg</property>
     <factor> -1 </factor>
     <center>
        <x-m>  6.934 </x-m>
@@ -121,7 +121,7 @@
     <object-name>blade3</object-name>
     <object-name>propblur3</object-name>
     <object-name>propdisc3</object-name>
-    <property>rotors/main/cone-deg</property>
+    <property>rotors/main/cone3-deg</property>
     <factor> -1 </factor>
     <center>
        <x-m>  5.081 </x-m>
@@ -147,7 +147,7 @@
     <object-name>blade2</object-name>
     <object-name>propblur2</object-name>
     <object-name>propdisc2</object-name>
-    <property>rotors/main/cone-deg</property>
+    <property>rotors/main/cone2-deg</property>
     <factor> -1 </factor>
     <center>
        <x-m>  3.214 </x-m>
@@ -177,7 +177,7 @@
     <object-name>propblur1</object-name>
     <object-name>propdisc1</object-name>
     <object-name>axe</object-name>
-    <property>rotors/main/cone-deg</property>
+    <property>rotors/main/cone1-deg</property>
     <factor> -1 </factor>
     <center>
        <x-m> 0.000 </x-m>

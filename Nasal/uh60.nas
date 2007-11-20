@@ -68,15 +68,19 @@ var stall_filtered = props.globals.getNode("rotors/main/stall-filtered", 1);
 var torque_sound_filtered = props.globals.getNode("rotors/gear/torque-sound-filtered", 1);
 var target_rel_rpm = props.globals.getNode("controls/rotor/reltarget", 1);
 var max_rel_torque = props.globals.getNode("controls/rotor/maxreltorque", 1);
+var cone = props.globals.getNode("rotors/main/cone-deg", 1);
+var cone1 = props.globals.getNode("rotors/main/cone1-deg", 1);
+var cone2 = props.globals.getNode("rotors/main/cone2-deg", 1);
+var cone3 = props.globals.getNode("rotors/main/cone3-deg", 1);
+var cone4 = props.globals.getNode("rotors/main/cone4-deg", 1);
 
-
+# state:
 # 0 off
 # 1 engine startup
 # 2 engine startup with small torque on rotor
 # 3 engine idle
 # 4 engine accel
 # 5 engine sound loop
-
 
 var update_state = func {
 	var s = state.getValue();
@@ -143,6 +147,17 @@ var update_engine = func {
 		interpolate (engine,  clamp( rotor_rpm.getValue() / 235 ,
 								0.05, target_rel_rpm.getValue() ), 0.25 );
 	}
+}
+
+var update_rotor_cone_angle = func {
+	r = rotor_rpm.getValue();
+	var f = 1 - r / 100;
+	f = clamp (f, 0.1 , 1);
+	c = cone.getValue();
+	cone1.setDoubleValue( f *c *0.40 + (1-f) * c );
+	cone2.setDoubleValue( f *c *0.35);
+	cone3.setDoubleValue( f *c *0.3);
+	cone4.setDoubleValue( f *c *0.25);
 }
 
 # torquemeter
@@ -392,6 +407,7 @@ var main_loop = func {
 	update_torque_sound_filtered(dt);
 	update_slide();
 	update_engine();
+	update_rotor_cone_angle();
 	settimer(main_loop, 0);
 }
 

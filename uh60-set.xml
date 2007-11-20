@@ -36,10 +36,6 @@ UH 60 simulation config.
       </uh60>
     </model>
 
-    <hud>
-      <enable3d>false</enable3d>
-    </hud>
-
     <weight n="0">
       <name>Pilot</name>
       <weight-lb>180</weight-lb>
@@ -97,11 +93,13 @@ UH 60 simulation config.
         <magnetos>0</magnetos>
       </engine>
     </engines>
-    <lighting>
-      <strobe type="bool">true</strobe>
-      <beacon type="bool">true</beacon>
-      <nav-lights type="bool">true</nav-lights>
-    </lighting>
+    <gear>
+      <brake-parking>1</brake-parking>
+    </gear>
+    <rotor>
+      <reltarget>1</reltarget>
+      <maxreltorque>1</maxreltorque>
+    </rotor>
   </controls>
 
   <instrumentation>
@@ -125,6 +123,11 @@ UH 60 simulation config.
   <rotors>
     <main>
       <rpm type="double">0</rpm>
+      <cone-deg type="double">0</cone-deg>
+      <cone1-deg type="double">0</cone1-deg>
+      <cone2-deg type="double">0</cone2-deg>
+      <cone3-deg type="double">0</cone3-deg>
+      <cone4-deg type="double">0</cone4-deg>
     </main>
   </rotors>
 
