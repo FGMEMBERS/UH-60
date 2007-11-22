@@ -58,5 +58,22 @@
     </condition>
   </animation>
 
+  <!-- Incidence de la pale -->
+  <animation>
+    <type>rotate</type>
+    <object-name>blade</object-name>
+    <property>rotors/tail/blade/incidence-deg</property>
+    <center>
+       <x-m> 0.000 </x-m>
+       <y-m> 0.000 </y-m>
+       <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
 </PropertyList>
 
