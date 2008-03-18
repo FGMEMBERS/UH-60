@@ -7,7 +7,7 @@ OBJECT poly
 name "blade"
 data 5
 blade
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 36
@@ -326,7 +326,7 @@ OBJECT poly
 name "propblur"
 data 8
 propblur
-texture "prop.rgb"
+texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -378,7 +378,7 @@ OBJECT poly
 name "propdisc"
 data 8
 propdisc
-texture "prop.rgb"
+texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 7

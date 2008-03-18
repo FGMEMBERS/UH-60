@@ -10401,7 +10401,7 @@ OBJECT poly
 name "Cube.130_1"
 data 8
 Cube.240
-texture "instr-tmp.rgb"
+texture "instr-tmp.png"
 texrep 1 1
 crease 30.000000
 numvert 4

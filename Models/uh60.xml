@@ -14,8 +14,6 @@
     <object-name>fuselage</object-name>
     <object-name>interieur</object-name>
     <object-name>tubes</object-name>
-    <object-name>pilote</object-name>
-    <object-name>copilote</object-name>
     <object-name>elevator</object-name>
     <object-name>axeL1</object-name> 
     <object-name>axeL2</object-name> 
@@ -128,10 +126,33 @@
     </offsets>
   </model>
 
+  <!-- Pilote -->
+  <model>
+    <name>Pilote</name>
+    <path>Aircraft/UH-60/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.680 </x-m>
+      <y-m>  0.682 </y-m>
+      <z-m> -0.969 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Copilote -->
+  <model>
+    <name>Copilote</name>
+    <path>Aircraft/UH-60/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.680 </x-m>
+      <y-m> -0.682 </y-m>
+      <z-m> -0.969 </z-m>
+    </offsets>
+  </model>
+
   <!-- Pilote invisible depuis le cockpit -->
   <animation>
     <type>select</type>
-    <object-name>pilote</object-name>
+    <object-name>Pilote</object-name>
+    <object-name>Copilote</object-name>
     <condition>
       <greater-than>
         <property>sim/current-view/view-number</property>

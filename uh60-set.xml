@@ -20,7 +20,7 @@ UH 60 simulation config.
     <fuel-fraction>0.8</fuel-fraction>
 
     <startup>
-      <splash-texture>Aircraft/UH-60/uh60-splash.rgb</splash-texture>
+      <splash-texture>Aircraft/UH-60/uh60-splash.png</splash-texture>
     </startup>
 
     <sound>
