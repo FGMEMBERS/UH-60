@@ -15,6 +15,7 @@
     <object-name>interieur</object-name>
     <object-name>tubes</object-name>
     <object-name>elevator</object-name>
+<!--
     <object-name>axeL1</object-name> 
     <object-name>axeL2</object-name> 
     <object-name>axeL3</object-name> 
@@ -30,13 +31,12 @@
     <object-name>axeT3</object-name> 
     <object-name>axeT4</object-name> 
     <object-name>roueA</object-name>
+-->
     <object-name>doorL</object-name>
     <object-name>doorR</object-name>
     <object-name>rails</object-name>
     <object-name>windowL1</object-name>
-    <object-name>windowL2</object-name>
     <object-name>windowR1</object-name>
-    <object-name>windowR2</object-name>
     <object-name>cachetail</object-name>
     <object-name>rotor</object-name>
 
@@ -255,7 +255,7 @@
     </axis>
   </animation>
 
-  <!-- Compression -->
+  <!-- Compression 
   <animation>
     <type>translate</type>
     <object-name>roueG</object-name>
@@ -326,8 +326,8 @@
       <z> 1.000 </z>
     </axis>
   </animation>
-	
-  <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
+	-->
+  <!-- Rotation de la roue avant en fonction de la gouverne de direction 
   <animation>
     <type>rotate</type>
     <object-name>roueA</object-name>
@@ -345,8 +345,8 @@
        <z>  1.000 </z>
      </axis>
   </animation>
-
-  <!-- Rotation des roues lors du roulage -->
+-->
+  <!-- Rotation des roues lors du roulage 
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
@@ -397,5 +397,5 @@
       <z>  0.000 </z>
     </axis>
   </animation>
-
+-->
 </PropertyList>

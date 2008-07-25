@@ -1,4 +1,4 @@
-English/Fran√ßais
+English/FranÁais
 
 [English]
 ----------
@@ -31,14 +31,16 @@ Shift+d : Bays
 
 Thanks
 ======
+
 Maik JUSTUS and Thomas REAGAN for the new FDM
+Detlef FABER for new texture and update FDM
 
 ===============
 BARANGER Emmanuel
 May 20, 2007. 
 
 
-[Fran√ßais]
+[FranÁais]
 ----------
 Un peu d'histoire
 =================
@@ -48,14 +50,14 @@ Suikorsky UH 60 BlackHawk
 
 Constructeur                  : Sikorsky
 Type                          : 
-Ann√©e                         : 
+AnnËe                         : 
 Moteur                        : 
 Envergure                     : 
 Longueur                      : 
 Hauteur                       : 
-Poids estim√© au d√©collage     : 
-Vitesse estim√©e de croisi√®re  : 
-Autonomie estim√©e             : 
+Poids au dËcollage            : 
+Vitesse de croisiËre          : 
+Autonomie estimËe             : 
 Equipage                      : 
 Charge utile                  : 
 
@@ -69,6 +71,7 @@ Shift+d : Baie
 Remerciements
 =============
 Maik JUSTUS et Thomas REAGAN pour le nouveau FDM
+Detlef FABER pour la nouvelle texture et les modifications sur le FDM
 
 ===============
 BARANGER Emmanuel
