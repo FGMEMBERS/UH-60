@@ -94,15 +94,15 @@
   </rotor>
 
   <!-- only the engine power below is a known good value -->
-  <rotorgearm max-power-engine="2326"
-              max-power-rotor-brake="185"
-              rotorgear-friction="3.7"
-              engine-prop-factor="0.005"
-              engine-accel-limit="4"
-              yasimdragfactor="10.23"
-              yasimliftfactor="100.385">
-              <control-input axis="/controls/engines/engine[0]/magnetos" control="ROTORGEARENGINEON"/>
-              <control-input axis="/controls/rotor/brake" control="ROTORBRAKE" src0="0.0" src1="1.0" dst0="0.0" dst1="1.0"/>
+  <rotorgear max-power-engine="2326"
+             max-power-rotor-brake="185"
+             rotorgear-friction="3.7"
+             engine-prop-factor="0.005"
+             engine-accel-limit="4"
+             yasimdragfactor="10.23"
+             yasimliftfactor="100.385">
+             <control-input axis="/controls/engines/engine[0]/magnetos" control="ROTORGEARENGINEON"/>
+             <control-input axis="/controls/rotor/brake" control="ROTORBRAKE" src0="0.0" src1="1.0" dst0="0.0" dst1="1.0"/>
   </rotorgear>
 
   <cockpit x="-1.88" y=".33" z="0.6"/>
