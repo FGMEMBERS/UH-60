@@ -10,7 +10,7 @@
 
   <!-- Instrument 1 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr1.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr1.xml</path>
     <offsets>
       <x-m> -0.250 </x-m>
       <y-m>  0.146 </y-m>
@@ -22,7 +22,7 @@
   </model>
 
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr1.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr1.xml</path>
     <offsets>
       <x-m> -0.250 </x-m>
       <y-m> -0.146 </y-m>
@@ -35,7 +35,7 @@
 
   <!-- Instrument 2 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr2.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr2.xml</path>
     <offsets>
       <x-m> -0.108 </x-m>
       <y-m>  0.146 </y-m>
@@ -47,7 +47,7 @@
   </model>
 
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr2.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr2.xml</path>
     <offsets>
       <x-m> -0.108 </x-m>
       <y-m> -0.146 </y-m>
@@ -60,7 +60,7 @@
 
   <!-- Instrument 3 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr3.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr3.xml</path>
     <offsets>
       <x-m> -0.338 </x-m>
       <y-m>  0.000 </y-m>
@@ -73,7 +73,7 @@
 
   <!-- Instrument 4 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr4.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr4.xml</path>
     <offsets>
       <x-m> -0.283 </x-m>
       <y-m>  0.000 </y-m>
@@ -86,7 +86,7 @@
 
   <!-- Instrument 5 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr5.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr5.xml</path>
     <offsets>
       <x-m> -0.177 </x-m>
       <y-m>  0.000 </y-m>
@@ -99,7 +99,7 @@
 
   <!-- Instrument 6 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr6.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr6.xml</path>
     <offsets>
       <x-m> -0.061 </x-m>
       <y-m>  0.000 </y-m>
@@ -112,7 +112,7 @@
 
   <!-- Instrument 7 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr7.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr7.xml</path>
     <offsets>
       <x-m> 0.015 </x-m>
       <y-m> 0.000 </y-m>
@@ -125,7 +125,7 @@
 
   <!-- Instrument 8 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr8.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr8.xml</path>
     <offsets>
       <x-m> 0.116 </x-m>
       <y-m> 0.000 </y-m>
@@ -138,7 +138,7 @@
 
   <!-- Instrument 9 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr9.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr9.xml</path>
     <offsets>
       <x-m> 0.214 </x-m>
       <y-m> 0.000 </y-m>
@@ -151,7 +151,7 @@
 
   <!-- Instrument 10 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr10.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr10.xml</path>
     <offsets>
       <x-m> -0.041 </x-m>
       <y-m>  0.146 </y-m>
@@ -164,7 +164,7 @@
 
   <!-- Instrument 11 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr11.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr11.xml</path>
     <offsets>
       <x-m> 0.029 </x-m>
       <y-m> 0.146 </y-m>
@@ -177,7 +177,7 @@
 
   <!-- Instrument 12 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr12.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr12.xml</path>
     <offsets>
       <x-m> 0.090 </x-m>
       <y-m> 0.146 </y-m>
@@ -190,7 +190,7 @@
 
   <!-- Instrument 13 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr13.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr13.xml</path>
     <offsets>
       <x-m> 0.153 </x-m>
       <y-m> 0.146 </y-m>
@@ -203,7 +203,7 @@
 
   <!-- Instrument 14 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr14.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr14.xml</path>
     <offsets>
       <x-m> 0.200 </x-m>
       <y-m> 0.146 </y-m>
@@ -216,7 +216,7 @@
 
   <!-- Instrument 15 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr15.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr15.xml</path>
     <offsets>
       <x-m> 0.229 </x-m>
       <y-m> 0.146 </y-m>
@@ -229,7 +229,7 @@
 
   <!-- Instrument 16 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr16.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr16.xml</path>
     <offsets>
       <x-m> -0.035 </x-m>
       <y-m> -0.146 </y-m>
@@ -242,7 +242,7 @@
 
   <!-- Instrument 17 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr17.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr17.xml</path>
     <offsets>
       <x-m>  0.045 </x-m>
       <y-m> -0.146 </y-m>
@@ -255,7 +255,7 @@
 
   <!-- Instrument 18 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr18.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr18.xml</path>
     <offsets>
       <x-m>  0.117 </x-m>
       <y-m> -0.146 </y-m>
@@ -268,7 +268,7 @@
 
   <!-- Instrument 19 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr19.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr19.xml</path>
     <offsets>
       <x-m>  0.177 </x-m>
       <y-m> -0.146 </y-m>
@@ -281,7 +281,7 @@
 
   <!-- Instrument 20 -->
   <model>
-    <path>Aircraft/UH-60/Models/Panels/Instruments/instr20.xml</path>
+    <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr20.xml</path>
     <offsets>
       <x-m>  0.225 </x-m>
       <y-m> -0.146 </y-m>

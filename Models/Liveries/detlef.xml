@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Detlef</name>
+        <texture>uh60-1.png</texture>
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>

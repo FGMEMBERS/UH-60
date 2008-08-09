@@ -29,12 +29,27 @@ UH 60 simulation config.
 
     <model>
       <path archive="y">Aircraft/UH-60/Models/uh60.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
       <uh60>
         <state type="int">0</state>
         <engine type="float">0.0</engine>
         <rotor-step-deg type="float">-1.0</rotor-step-deg>
       </uh60>
     </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
 
     <weight n="0">
       <name>Pilot</name>
@@ -85,6 +100,8 @@ UH 60 simulation config.
       </key>
     </help>
 
+    <menubar include="Dialogs/uh60-menu.xml"/>
+
   </sim>
 
   <controls>
@@ -117,6 +134,7 @@ UH 60 simulation config.
     <uh60>
       <file>Aircraft/UH-60/Nasal/doors.nas</file>
       <file>Aircraft/UH-60/Nasal/uh60.nas</file>
+      <file>Aircraft/UH-60/Nasal/liveries.nas</file>
     </uh60>
   </nasal>
 
