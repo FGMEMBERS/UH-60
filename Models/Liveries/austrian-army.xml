@@ -5,8 +5,8 @@
   <sim>
     <model>
       <livery>
-        <name type="string">Detlef</name>
-        <texture>Liveries/uh60-1.png</texture>
+        <name type="string">Austrian Army</name>
+        <texture>Liveries/austrian-army.png</texture>
         <specular>
           <red>0</red>
           <green>0</green>
@@ -17,3 +17,4 @@
   </sim>
 
 </PropertyList>
+
