@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -50,6 +50,8 @@
 
     <!-- Transparence -->
     <object-name>vitres</object-name>
+    <object-name>vitreG</object-name>
+    <object-name>vitreD</object-name>
     <object-name>glaceL</object-name>
     <object-name>glaceR</object-name>
     <object-name>glaceL1</object-name>
@@ -61,6 +63,24 @@
   <animation>
     <type>noshadow</type>
     <object-name>vitres</object-name>
+    <object-name>vitreG</object-name>
+    <object-name>vitreD</object-name>
+    <object-name>glaceL</object-name>
+    <object-name>glaceR</object-name>
+    <object-name>glaceL1</object-name>
+    <object-name>glaceL2</object-name>
+    <object-name>glaceR1</object-name>
+    <object-name>glaceR2</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader.png</texture>
+    <object-name>vitres</object-name>
+    <object-name>vitres</object-name>
+    <object-name>vitreG</object-name>
+    <object-name>vitreD</object-name>
     <object-name>glaceL</object-name>
     <object-name>glaceR</object-name>
     <object-name>glaceL1</object-name>
@@ -102,11 +122,35 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
   </animation>
 
   <!-- Interieur -->
@@ -151,7 +195,7 @@
   <animation>
     <type>rotate</type>
     <object-name>rotor</object-name>
-    <property>rotors/main/blade[0]/position-deg</property>
+    <property>/rotors/main/blade[0]/position-deg</property>
     <center>
        <x-m> -3.047 </x-m>
        <y-m>  0.000 </y-m>
@@ -164,13 +208,18 @@
     </axis>
   </animation>
 
-  <!-- Portes coté gauche -->
+  <!-- Portes arrières -->
   <animation>
-    <type>translate</type>
+    <name>PortesArrieres</name>
     <object-name>doorL</object-name>
     <object-name>doorR</object-name>
     <object-name>glaceL</object-name>
     <object-name>glaceR</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>PortesArrieres</object-name>
     <property>/instrumentation/doors/passenger/position-norm</property>
     <factor> 1.70 </factor>
     <axis>
@@ -180,13 +229,18 @@
     </axis>
   </animation>
 
-  <!-- Portes coté gauche -->
+  <!-- Fenêtres -->
   <animation>
-    <type>translate</type>
+    <name>FenetresArrieres</name>
     <object-name>windowL2</object-name>
     <object-name>windowR2</object-name>
     <object-name>glaceL2</object-name>
     <object-name>glaceR2</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>FenetresArrieres</object-name>
     <property>/instrumentation/doors/crew/position-norm</property>
     <factor> -0.3 </factor>
     <axis>
@@ -197,7 +251,7 @@
   </animation>
 
   <animation>
-    <type>translate</type>
+    <name>FenetresTotals</name>
     <object-name>windowL1</object-name>
     <object-name>windowL2</object-name>
     <object-name>windowR1</object-name>
@@ -206,6 +260,11 @@
     <object-name>glaceL2</object-name>
     <object-name>glaceR1</object-name>
     <object-name>glaceR2</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>FenetresTotals</object-name>
     <property>/instrumentation/doors/crew/position-norm</property>
     <factor> -0.3 </factor>
     <axis>
@@ -221,14 +280,8 @@
     <object-name>elevator</object-name>
     <property>/controls/flight/elevator</property>
     <interpolation>
-      <entry>
-        <ind> -1.00 </ind>
-        <dep> -9.66 </dep>
-      </entry>
-      <entry>
-        <ind>  1.00 </ind>
-        <dep> 45.88 </dep>
-      </entry>
+      <entry><ind> -1 </ind><dep> -9.66 </dep></entry>
+      <entry><ind>  1 </ind><dep> 45.88 </dep></entry>
     </interpolation>
     <center>
       <x-m>  5.929 </x-m>
@@ -244,19 +297,18 @@
 
   <!-- Compression -->
   <animation>
-    <type>translate</type>
+    <name>TrainGauche</name>
     <object-name>roueG</object-name>
     <object-name>axeL1</object-name>
-    <property>gear/gear[0]/compression-norm</property>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>TrainGauche</object-name>
+    <property>/gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.000 </ind>
-        <dep> 0.300 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.3 </dep></entry>
     </interpolation>
     <axis>
       <x> 0.000 </x>
@@ -268,16 +320,10 @@
   <animation>
     <type>rotate</type>
     <object-name>axeL2</object-name>
-    <property>gear/gear[0]/compression-norm</property>
+    <property>/gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>  1.00 </ind>
-        <dep> -5.00 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -5 </dep></entry>
     </interpolation>
     <center>
       <x-m> -5.083 </x-m>
@@ -292,19 +338,18 @@
   </animation>
 
   <animation>
-    <type>translate</type>
+    <name>TrainDroit</name>
     <object-name>roueD</object-name>
     <object-name>axeR1</object-name>
-    <property>gear/gear[1]/compression-norm</property>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>TrainDroit</object-name>
+    <property>/gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.000 </ind>
-        <dep> 0.300 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.3 </dep></entry>
     </interpolation>
     <axis>
       <x> 0.000 </x>
@@ -316,16 +361,10 @@
   <animation>
     <type>rotate</type>
     <object-name>axeR2</object-name>
-    <property>gear/gear[1]/compression-norm</property>
+    <property>/gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>  1.00 </ind>
-        <dep> -5.00 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -5 </dep></entry>
     </interpolation>
     <center>
       <x-m> -5.083 </x-m>
@@ -341,10 +380,15 @@
 
   <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
   <animation>
-    <type>rotate</type>
+    <name>TrainArriere</name>
     <object-name>roueA</object-name>
     <object-name>axeT3</object-name>
-    <property>controls/flight/rudder</property>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>TrainArriere</object-name>
+    <property>/controls/flight/rudder</property>
     <factor>  10.0 </factor>
      <center>
        <x-m>  4.358 </x-m>
@@ -362,7 +406,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
-    <property>gear/gear[0]/rollspeed-ms</property>
+    <property>/gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -4.136 </x-m>
@@ -379,7 +423,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueD</object-name>
-    <property>gear/gear[1]/rollspeed-ms</property>
+    <property>/gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -4.136 </x-m>
@@ -396,7 +440,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueA</object-name>
-    <property>gear/gear[2]/rollspeed-ms</property>
+    <property>/gear/gear[2]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m>  4.665 </x-m>
