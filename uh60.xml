@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <!-- UH 60 BlackHack - Maik Justus
                        Thomas REAGAN
@@ -65,6 +65,8 @@
          <control-input axis="/controls/flight/elevator-trim" control="CYCLICELE" split="true"/>
          <control-input axis="/controls/flight/elevator" control="CYCLICELE" src0="-1.0" src1="1.0" dst0="-1.0" dst1="1.0"/>
          <control-input axis="/controls/engines/engine[0]/throttle" control="COLLECTIVE" src0="0.0" src1="1.0" dst0="1.0" dst1="-1.0"/>
+
+         <control-output control="CYCLICELE" prop="/surface-positions/elevator-pos-norm"/>
   </rotor>
 
   <!-- rotor data below that is indented further is known good data -->
@@ -100,6 +102,8 @@
          rotor-correction-factor="0.9">
          <control-input axis="/controls/flight/rudder" control="COLLECTIVE" invert="true" src0="-1.0" src1="1.0" dst0="-1.0" dst1="1.0"/>
          <control-input axis="/controls/engines/engine[0]/throttle" control="COLLECTIVE" src0="0.1" src1="1.0" dst0=".0007" dst1="-.00055"/>
+
+         <control-output control="COLLECTIVE" prop="/surface-positions/rudder-pos-norm"/>
   </rotor>
 
   <!-- only the engine power below is a known good value -->

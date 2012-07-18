@@ -1,8 +1,8 @@
 # Maik Justus < fg # mjustus : de >, based on bo105.nas by Melchior FRANZ, < mfranz # aon : at >
 
-if (!contains(globals, "cprint")) {
-	globals.cprint = func {};
-}
+#if (!contains(globals, "cprint")) {
+#	globals.cprint = func {};
+#}
 
 var optarg = aircraft.optarg;
 var makeNode = aircraft.makeNode;
@@ -13,9 +13,6 @@ var pow = func(v, w) { math.exp(math.ln(v) * w) }
 var npow = func(v, w) { math.exp(math.ln(abs(v)) * w) * (v < 0 ? -1 : 1) }
 var clamp = func(v, min = 0, max = 1) { v < min ? min : v > max ? max : v }
 var normatan = func(x) { math.atan2(x, 1) * 2 / math.pi }
-
-
-
 
 # timers ============================================================
 var turbine_timer = aircraft.timer.new("/sim/time/hobbs/turbines", 10);
@@ -30,7 +27,6 @@ aircraft.light.new("sim/model/uh60/lighting/strobe-bottom", [0.05, 1.03], strobe
 var beacon_switch = props.globals.getNode("controls/lighting/beacon", 1);
 aircraft.light.new("sim/model/uh60/lighting/beacon-top", [0.62, 0.62], beacon_switch);
 aircraft.light.new("sim/model/uh60/lighting/beacon-bottom", [0.63, 0.63], beacon_switch);
-
 
 # nav lights ========================================================
 var nav_light_switch = props.globals.getNode("controls/lighting/nav-lights", 1);
@@ -48,11 +44,6 @@ var nav_light_loop = func {
 }
 
 settimer(nav_light_loop, 0);
-
-
-
-
-
 
 # engines/rotor =====================================================
 var state = props.globals.getNode("sim/model/uh60/state");
@@ -170,9 +161,6 @@ var update_torque = func(dt) {
 	torque_pct.setDoubleValue(torque_val / 5300);
 }
 
-
-
-
 # sound =============================================================
 
 # stall sound
@@ -202,10 +190,6 @@ var update_torque_sound_filtered = func(dt) {
 	var r = clamp(rotor_rpm.getValue()*0.02-1);
 	torque_sound_filtered.setDoubleValue(t*r);
 }
-
-
-
-
 
 # skid slide sound
 var Skid = {
@@ -256,8 +240,6 @@ var update_slide = func {
 	}
 }
 
-
-
 # crash handler =====================================================
 #var load = nil;
 var crash = func {
@@ -296,9 +278,6 @@ var crash = func {
 	}
 }
 
-
-
-
 # "manual" rotor animation for flight data recorder replay ============
 var rotor_step = props.globals.getNode("sim/model/uh60/rotor-step-deg");
 var blade1_pos = props.globals.getNode("rotors/main/blade[0]/position-deg", 1);
@@ -324,15 +303,6 @@ var init_rotoranim = func {
 		settimer(rotoranim_loop, 0.1);
 	}
 }
-
-
-
-
-
-
-
-
-
 
 # view management ===================================================
 
@@ -371,7 +341,6 @@ controls.flapsDown = func(v) {
 	}
 }
 
-
 # register function that may set me.heading_offset, me.pitch_offset, me.roll_offset,
 # me.x_offset, me.y_offset, me.z_offset, and me.fov_offset
 #
@@ -389,9 +358,6 @@ dynamic_view.register(func {
 	me.roll_offset =						# roll change due to
 		-15 * r * lowspeed;					#    roll
 });
-
-
-
 
 # main() ============================================================
 var delta_time = props.globals.getNode("/sim/time/delta-realtime-sec", 1);
@@ -411,12 +377,10 @@ var main_loop = func {
 	settimer(main_loop, 0);
 }
 
-
 var crashed = 0;
 var variant = nil;
 var doors = nil;
 var config_dialog = nil;
-
 
 # initialization
 setlistener("/sim/signals/fdm-initialized", func {
@@ -453,5 +417,4 @@ setlistener("/sim/signals/fdm-initialized", func {
 
 	main_loop();
 });
-
 

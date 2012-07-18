@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
@@ -6,6 +6,14 @@
 
   <animation>
     <!-- Objets opaques -->
+    <object-name>intporteL</object-name>
+    <object-name>intporteR</object-name>
+    <object-name>intwindowL1</object-name>
+    <object-name>intwindowL2</object-name>
+    <object-name>intwindowR1</object-name>
+    <object-name>intwindowR2</object-name>
+    <object-name>intdoorL</object-name>
+    <object-name>intdoorR</object-name>
     <object-name>interieur</object-name>
 
     <!-- Objets transparents -->
@@ -36,7 +44,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>shader.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>intvitres</object-name>
     <object-name>intvitreG</object-name>
     <object-name>intvitreD</object-name>
@@ -68,9 +76,6 @@
       <x-m> -6.010 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -1.086 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
@@ -81,9 +86,6 @@
       <x-m> -5.833 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.132 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
@@ -114,17 +116,19 @@
     <name>IntPortesArrieres</name>
     <object-name>intglaceL</object-name>
     <object-name>intglaceR</object-name>
+    <object-name>intdoorL</object-name>
+    <object-name>intdoorR</object-name>
   </animation>
 
   <animation>
     <type>translate</type>
     <object-name>IntPortesArrieres</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>instrumentation/doors/passenger/position-norm</property>
     <factor> 1.70 </factor>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -133,17 +137,19 @@
     <name>IntFenetresArrieres</name>
     <object-name>intglaceL2</object-name>
     <object-name>intglaceR2</object-name>
+    <object-name>intwindowL2</object-name>
+    <object-name>intwindowR2</object-name>
   </animation>
 
   <animation>
     <type>translate</type>
     <object-name>IntFenetresArrieres</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <factor> -0.3 </factor>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -153,17 +159,21 @@
     <object-name>intglaceL2</object-name>
     <object-name>intglaceR1</object-name>
     <object-name>intglaceR2</object-name>
+    <object-name>intwindowL1</object-name>
+    <object-name>intwindowR1</object-name>
+    <object-name>intwindowL2</object-name>
+    <object-name>intwindowR2</object-name>
   </animation>
 
   <animation>
     <type>translate</type>
     <object-name>IntFenetresTotals</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <factor> -0.3 </factor>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 

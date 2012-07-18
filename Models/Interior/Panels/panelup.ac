@@ -7,7 +7,7 @@ OBJECT poly
 name "panal4"
 data 6
 panel4
-texture "tmp.png"
+texture "color.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2371,7 +2371,7 @@ OBJECT poly
 name "panel5"
 data 6
 panel5
-texture "tmp.png"
+texture "color.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -2392,7 +2392,7 @@ OBJECT poly
 name "panel6"
 data 6
 panel6
-texture "tmp.png"
+texture "color.png"
 texrep 1 1
 crease 30.000000
 numvert 15

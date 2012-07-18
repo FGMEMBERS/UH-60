@@ -1198,7 +1198,7 @@ OBJECT poly
 name "panel2"
 data 6
 panel2
-texture "tmp.png"
+texture "color.png"
 texrep 1 1
 crease 30.000000
 numvert 18

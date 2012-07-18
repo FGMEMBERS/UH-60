@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!--
-************************************************************************
-UH 60 simulation config.
-
-************************************************************************
--->
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
 
@@ -19,6 +12,13 @@ UH 60 simulation config.
     <flight-model>yasim</flight-model>
     <aero>uh60</aero>
     <fuel-fraction>0.8</fuel-fraction>
+
+    <rating>
+      <FDM type="int">     1 </FDM>
+      <systems type="int"> 0 </systems>
+      <cockpit type="int"> 0 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
 
     <startup>
       <splash-texture>Aircraft/UH-60/uh60-splash.png</splash-texture>
@@ -35,20 +35,30 @@ UH 60 simulation config.
       </livery>
       <uh60>
         <state type="int">0</state>
-        <engine type="float">0.0</engine>
-        <rotor-step-deg type="float">-1.0</rotor-step-deg>
+        <engine type="float">0</engine>
+        <rotor-step-deg type="float">-1</rotor-step-deg>
       </uh60>
     </model>
 
     <multiplay>
       <chat_display>1</chat_display>
-      <generic>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
+        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
+        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
       </generic>
     </multiplay>
 
@@ -131,14 +141,6 @@ UH 60 simulation config.
     <keyboard include="Nasal/uh60-keyboard.xml"/>
   </input>
 
-  <nasal>
-    <uh60>
-      <file>Aircraft/UH-60/Nasal/doors.nas</file>
-      <file>Aircraft/UH-60/Nasal/uh60.nas</file>
-      <file>Aircraft/UH-60/Nasal/liveries.nas</file>
-    </uh60>
-  </nasal>
-
   <rotors>
     <main>
       <rpm type="double">0</rpm>
@@ -149,6 +151,16 @@ UH 60 simulation config.
       <cone4-deg type="double">0</cone4-deg>
     </main>
   </rotors>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/UH-60/Nasal/doors.nas</file>
+    </doors>
+    <uh60>
+      <file>Aircraft/UH-60/Nasal/uh60.nas</file>
+      <file>Aircraft/UH-60/Nasal/liveries.nas</file>
+    </uh60>
+  </nasal>
 
 </PropertyList>
 
