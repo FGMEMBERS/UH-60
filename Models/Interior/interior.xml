@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>intporteL</object-name>
+    <object-name>intporteR</object-name>
+    <object-name>intwindowL1</object-name>
+    <object-name>intwindowL2</object-name>
+    <object-name>intwindowR1</object-name>
+    <object-name>intwindowR2</object-name>
+    <object-name>intdoorL</object-name>
+    <object-name>intdoorR</object-name>
+    <object-name>interieur</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitreG</object-name>
+    <object-name>intvitreD</object-name>
+    <object-name>intglaceL</object-name>
+    <object-name>intglaceR</object-name>
+    <object-name>intglaceL1</object-name>
+    <object-name>intglaceL2</object-name>
+    <object-name>intglaceR1</object-name>
+    <object-name>intglaceR2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreG</object-name>
+    <object-name>intvitreD</object-name>
+    <object-name>intglaceL</object-name>
+    <object-name>intglaceR</object-name>
+    <object-name>intglaceL1</object-name>
+    <object-name>intglaceL2</object-name>
+    <object-name>intglaceR1</object-name>
+    <object-name>intglaceR2</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreG</object-name>
+    <object-name>intvitreD</object-name>
+    <object-name>intglaceL</object-name>
+    <object-name>intglaceR</object-name>
+    <object-name>intglaceL1</object-name>
+    <object-name>intglaceL2</object-name>
+    <object-name>intglaceR1</object-name>
+    <object-name>intglaceR2</object-name>
+  </animation>
+
+  <!-- Tableau de bord principal -->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/panelfront.xml</path>
+    <offsets>
+      <x-m> -6.554 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.746 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>  -30.540 </pitch-deg>
+      <heading-deg>  0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord central -->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/paneldown.xml</path>
+    <offsets>
+      <x-m> -6.010 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.086 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord plafonnier -->
+  <model>
+    <path>Aircraft/UH-60/Models/Interior/Panels/panelup.xml</path>
+    <offsets>
+      <x-m> -5.833 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.132 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pilote -->
+  <model>
+    <name>Pilote</name>
+    <path>Aircraft/UH-60/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.680 </x-m>
+      <y-m>  0.682 </y-m>
+      <z-m> -0.969 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Copilote -->
+  <model>
+    <name>Copilote</name>
+    <path>Aircraft/UH-60/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.680 </x-m>
+      <y-m> -0.682 </y-m>
+      <z-m> -0.969 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Portes arrières -->
+  <animation>
+    <name>IntPortesArrieres</name>
+    <object-name>intglaceL</object-name>
+    <object-name>intglaceR</object-name>
+    <object-name>intdoorL</object-name>
+    <object-name>intdoorR</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntPortesArrieres</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> 1.70 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Fenêtres -->
+  <animation>
+    <name>IntFenetresArrieres</name>
+    <object-name>intglaceL2</object-name>
+    <object-name>intglaceR2</object-name>
+    <object-name>intwindowL2</object-name>
+    <object-name>intwindowR2</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntFenetresArrieres</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> -0.3 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>IntFenetresTotals</name>
+    <object-name>intglaceL1</object-name>
+    <object-name>intglaceL2</object-name>
+    <object-name>intglaceR1</object-name>
+    <object-name>intglaceR2</object-name>
+    <object-name>intwindowL1</object-name>
+    <object-name>intwindowR1</object-name>
+    <object-name>intwindowL2</object-name>
+    <object-name>intwindowR2</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntFenetresTotals</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> -0.3 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

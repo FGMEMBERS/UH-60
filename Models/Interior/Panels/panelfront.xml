@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>panelfront.ac</path>
+
+  <animation>
+    <object-name>panel1</object-name>
+    <object-name>panel2</object-name>
+    <object-name>panel3</object-name>
+    <object-name>panel4</object-name>
+  </animation>
+
+</PropertyList>
