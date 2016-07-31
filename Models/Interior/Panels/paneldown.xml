@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -8,7 +8,7 @@
     <object-name>panel1</object-name>
   </animation>
 
-  <!-- Instrument 1 -->
+  <!-- Instrument 1
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr1.xml</path>
     <offsets>
@@ -31,9 +31,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model> -->
 
-  <!-- Instrument 2 -->
+  <!-- Instrument 2 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr2.xml</path>
     <offsets>
@@ -56,9 +56,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 3 -->
+  <!-- Instrument 3 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr3.xml</path>
     <offsets>
@@ -69,9 +69,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 4 -->
+  <!-- Instrument 4
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr4.xml</path>
     <offsets>
@@ -82,9 +82,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model> -->
 
-  <!-- Instrument 5 -->
+  <!-- Instrument 5 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr5.xml</path>
     <offsets>
@@ -95,9 +95,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 6 -->
+  <!-- Instrument 6 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr6.xml</path>
     <offsets>
@@ -108,9 +108,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 7 -->
+  <!-- Instrument 7 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr7.xml</path>
     <offsets>
@@ -121,9 +121,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 8 -->
+  <!-- Instrument 8
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr8.xml</path>
     <offsets>
@@ -134,9 +134,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model> -->
 
-  <!-- Instrument 9 -->
+  <!-- Instrument 9 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr9.xml</path>
     <offsets>
@@ -147,9 +147,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 10 -->
+  <!-- Instrument 10 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr10.xml</path>
     <offsets>
@@ -160,9 +160,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 11 -->
+  <!-- Instrument 11 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr11.xml</path>
     <offsets>
@@ -173,9 +173,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 12 -->
+  <!-- Instrument 12 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr12.xml</path>
     <offsets>
@@ -186,9 +186,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 13 -->
+  <!-- Instrument 13 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr13.xml</path>
     <offsets>
@@ -199,9 +199,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 14 -->
+  <!-- Instrument 14 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr14.xml</path>
     <offsets>
@@ -213,8 +213,8 @@
       <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
-
-  <!-- Instrument 15 -->
+-->
+  <!-- Instrument 15
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr15.xml</path>
     <offsets>
@@ -225,9 +225,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model> -->
 
-  <!-- Instrument 16 -->
+  <!-- Instrument 16 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr16.xml</path>
     <offsets>
@@ -238,9 +238,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 17 -->
+  <!-- Instrument 17 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr17.xml</path>
     <offsets>
@@ -251,9 +251,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 18 -->
+  <!-- Instrument 18 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr18.xml</path>
     <offsets>
@@ -264,9 +264,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
-  <!-- Instrument 19 -->
+  <!-- Instrument 19
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr19.xml</path>
     <offsets>
@@ -277,9 +277,9 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model> -->
 
-  <!-- Instrument 20 -->
+  <!-- Instrument 20 
   <model>
     <path>Aircraft/UH-60/Models/Interior/Panels/Instruments/instr20.xml</path>
     <offsets>
@@ -290,6 +290,6 @@
       <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model>
+  </model>-->
 
 </PropertyList>

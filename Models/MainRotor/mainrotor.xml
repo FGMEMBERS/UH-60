@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -12,13 +12,26 @@
   <model>
     <name>Blade1</name>
     <path>Aircraft/UH-60/Models/MainRotor/blade.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
   </model>
 
   <model>
     <name>Blade2</name>
     <path>Aircraft/UH-60/Models/MainRotor/blade.xml</path>
     <offsets>
-      <heading-deg> 90 </heading-deg>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> 90.000 </heading-deg>
     </offsets>
   </model>
 
@@ -26,7 +39,12 @@
     <name>Blade3</name>
     <path>Aircraft/UH-60/Models/MainRotor/blade.xml</path>
     <offsets>
-      <heading-deg> 180 </heading-deg>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> 180.000 </heading-deg>
     </offsets>
   </model>
 
@@ -34,7 +52,12 @@
     <name>Blade4</name>
     <path>Aircraft/UH-60/Models/MainRotor/blade.xml</path>
     <offsets>
-      <heading-deg> 270 </heading-deg>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> 270.000 </heading-deg>
     </offsets>
   </model>
 
@@ -52,10 +75,15 @@
     <type>rotate</type>
     <object-name>rotorcomplet</object-name>
     <property>rotors/main/roll-deg</property>
+    <center>
+       <x-m> 0.000 </x-m>
+       <y-m> 0.000 </y-m>
+       <z-m> 0.000 </z-m>
+    </center>
     <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
     </axis>
   </animation>
 
@@ -63,10 +91,15 @@
     <type>rotate</type>
     <object-name>rotorcomplet</object-name>
     <property>rotors/main/yaw-deg</property>
+    <center>
+       <x-m> 0.000 </x-m>
+       <y-m> 0.000 </y-m>
+       <z-m> 0.000 </z-m>
+    </center>
     <axis>
-      <x> 0 </x>
-      <y>-1 </y>
-      <z> 0 </z>
+      <x> 0.000 </x>
+      <y>-1.000 </y>
+      <z> 0.000 </z>
     </axis>
   </animation>
 
@@ -74,10 +107,15 @@
     <type>rotate</type>
     <object-name>rotorcomplet</object-name>
     <property>rotors/main/blade[0]/position-deg</property>
+    <center>
+       <x-m> 0.000 </x-m>
+       <y-m> 0.000 </y-m>
+       <z-m> 0.000 </z-m>
+    </center>
     <axis>
-      <x>  0 </x>
-      <y>  0 </y>
-      <z>  1 </z>
+      <x>  0.000 </x>
+      <y>  0.000 </y>
+      <z>  1.000 </z>
     </axis>
   </animation>
 
