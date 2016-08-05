@@ -3,15 +3,12 @@
 <PropertyList>
 
   <path>uh60.ac</path>
-  <!-- -->
-  <dump>0</dump>
-  <offsets>
-    <x-m>3</x-m>
-    <z-m>1.15</z-m>
-    <pitch-deg>0</pitch-deg>
-  </offsets>
-  <!-- -->
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/UH-60/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/UH-60/Models/Liveries", 10);
@@ -37,8 +34,25 @@
 
   <animation>
     <object-name>fuselage</object-name>
+    <object-name>fuselage2</object-name>
+    <object-name>fuselage3</object-name>
+    <object-name>fuselage4</object-name>
     <object-name>elevator</object-name>
     <object-name>caches</object-name>
+    <object-name>doorL</object-name>
+    <object-name>doorR</object-name>
+    <object-name>windowL1</object-name>
+    <object-name>windowL2</object-name>
+    <object-name>windowR1</object-name>
+    <object-name>windowR2</object-name>
+    <object-name>cachetail</object-name>
+    <object-name>porteL</object-name>
+    <object-name>porteR</object-name>
+    <object-name>supportlampes</object-name>
+    <object-name>antennes</object-name>
+    <object-name>poignees</object-name>
+
+    <object-name>intermoteurs</object-name>
     <object-name>axeL1</object-name> 
     <object-name>axeL2</object-name> 
     <object-name>axeL3</object-name> 
@@ -52,18 +66,7 @@
     <object-name>axeT3</object-name> 
     <object-name>axeT4</object-name> 
     <object-name>roueA</object-name>
-    <object-name>doorL</object-name>
-    <object-name>doorR</object-name>
-    <object-name>windowL1</object-name>
-    <object-name>windowL2</object-name>
-    <object-name>windowR1</object-name>
-    <object-name>windowR2</object-name>
-    <object-name>cachetail</object-name>
-    <object-name>rotor</object-name>
-    <object-name>intermoteurs</object-name>
-    <object-name>porteL</object-name>
-    <object-name>porteR</object-name>
-
+    
     <!-- Transparence -->
     <object-name>vitres</object-name>
     <object-name>vitreG</object-name>
@@ -74,13 +77,32 @@
     <object-name>glaceL2</object-name>
     <object-name>glaceR1</object-name>
     <object-name>glaceR2</object-name>
+    <object-name>lampes</object-name>
+    <object-name>lampeverte</object-name>
   </animation>
 
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
+    <object-name>fuselage2</object-name>
+    <object-name>fuselage3</object-name>
+    <object-name>fuselage4</object-name>
     <object-name>elevator</object-name>
     <object-name>caches</object-name>
+    <object-name>doorL</object-name>
+    <object-name>doorR</object-name>
+    <object-name>windowL1</object-name>
+    <object-name>windowL2</object-name>
+    <object-name>windowR1</object-name>
+    <object-name>windowR2</object-name>
+    <object-name>cachetail</object-name>
+    <object-name>porteL</object-name>
+    <object-name>porteR</object-name>
+    <object-name>supportlampes</object-name>
+    <object-name>antennes</object-name>
+    <object-name>poignees</object-name>
+    
+    <object-name>intermoteurs</object-name>
     <object-name>axeL1</object-name> 
     <object-name>axeL2</object-name> 
     <object-name>axeL3</object-name> 
@@ -94,18 +116,7 @@
     <object-name>axeT3</object-name> 
     <object-name>axeT4</object-name> 
     <object-name>roueA</object-name>
-    <object-name>doorL</object-name>
-    <object-name>doorR</object-name>
-    <object-name>windowL1</object-name>
-    <object-name>windowL2</object-name>
-    <object-name>windowR1</object-name>
-    <object-name>windowR2</object-name>
-    <object-name>cachetail</object-name>
-    <object-name>rotor</object-name>
-    <object-name>intermoteurs</object-name>
-    <object-name>porteL</object-name>
-    <object-name>porteR</object-name>
-
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
@@ -114,46 +125,33 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
   <effect>
-    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <inherits-from>Aircraft/UH-60/Models/Effects/Bump/bumpspec</inherits-from>
     <object-name>fuselage</object-name>
+    <object-name>fuselage2</object-name>
+    <object-name>fuselage3</object-name>
+    <object-name>fuselage4</object-name>
     <object-name>elevator</object-name>
-    <object-name>porteL</object-name>
-    <object-name>porteR</object-name>
+    <object-name>caches</object-name>
+    <object-name>doorL</object-name>
+    <object-name>doorR</object-name>
     <object-name>windowL1</object-name>
     <object-name>windowL2</object-name>
     <object-name>windowR1</object-name>
     <object-name>windowR2</object-name>
-    <object-name>doorL</object-name>
-    <object-name>doorR</object-name>
     <object-name>cachetail</object-name>
+    <object-name>porteL</object-name>
+    <object-name>porteR</object-name>
+    <object-name>supportlampes</object-name>
+    <object-name>antennes</object-name>
+    <object-name>poignees</object-name>
   </effect>
 
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitres</object-name>
-    <object-name>vitreG</object-name>
-    <object-name>vitreD</object-name>
-    <object-name>glaceL</object-name>
-    <object-name>glaceR</object-name>
-    <object-name>glaceL1</object-name>
-    <object-name>glaceL2</object-name>
-    <object-name>glaceR1</object-name>
-    <object-name>glaceR2</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/UH-60/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
     <object-name>vitres</object-name>
     <object-name>vitreG</object-name>
@@ -164,8 +162,26 @@
     <object-name>glaceL2</object-name>
     <object-name>glaceR1</object-name>
     <object-name>glaceR2</object-name>
-  </animation>
-
+    <object-name>lampes</object-name>
+    <object-name>lampeverte</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitres</object-name>
+    <object-name>vitres</object-name>
+    <object-name>vitreG</object-name>
+    <object-name>vitreD</object-name>
+    <object-name>glaceL</object-name>
+    <object-name>glaceR</object-name>
+    <object-name>glaceL1</object-name>
+    <object-name>glaceL2</object-name>
+    <object-name>glaceR1</object-name>
+    <object-name>glaceR2</object-name>
+    <object-name>lampes</object-name>
+    <object-name>lampeverte</object-name>
+  </effect>
+  
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/UH-60/Models/shadow.xml</path>
@@ -188,7 +204,7 @@
       <x-m> -3.047 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  1.287 </z-m>
-      <pitch-deg>  -5 </pitch-deg>
+      <pitch-deg> -3 </pitch-deg>
     </offsets>
   </model>
 
@@ -199,91 +215,9 @@
       <x-m> 6.772 </x-m>
       <y-m> 0.379 </y-m>
       <z-m> 1.535 </z-m>
-      <roll-deg>  -69 </roll-deg>
+      <roll-deg> -69 </roll-deg>
     </offsets>
   </model>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>rotor</object-name>
-    <property>/rotors/main/blade[0]/position-deg</property>
-    <center>
-       <x-m> -3.047 </x-m>
-       <y-m>  0.000 </y-m>
-       <z-m>  0.811 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y>  0 </y>
-      <z>  1 </z>
-    </axis>
-  </animation>
-
-  <!-- Portes arrières -->
-  <animation>
-    <name>PortesArrieres</name>
-    <object-name>doorL</object-name>
-    <object-name>doorR</object-name>
-    <object-name>glaceL</object-name>
-    <object-name>glaceR</object-name>
-  </animation>
-
-  <animation>
-    <type>translate</type>
-    <object-name>PortesArrieres</object-name>
-    <property>/instrumentation/doors/passenger/position-norm</property>
-    <factor> 1.70 </factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <!-- Fenêtres -->
-  <animation>
-    <name>FenetresArrieres</name>
-    <object-name>windowL2</object-name>
-    <object-name>windowR2</object-name>
-    <object-name>glaceL2</object-name>
-    <object-name>glaceR2</object-name>
-  </animation>
-
-  <animation>
-    <type>translate</type>
-    <object-name>FenetresArrieres</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
-    <factor> -0.3 </factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <name>FenetresTotals</name>
-    <object-name>windowL1</object-name>
-    <object-name>windowL2</object-name>
-    <object-name>windowR1</object-name>
-    <object-name>windowR2</object-name>
-    <object-name>glaceL1</object-name>
-    <object-name>glaceL2</object-name>
-    <object-name>glaceR1</object-name>
-    <object-name>glaceR2</object-name>
-  </animation>
-
-  <animation>
-    <type>translate</type>
-    <object-name>FenetresTotals</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
-    <factor> -0.3 </factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
 
   <!-- Gouverne de profondeur -->
   <animation>
@@ -291,8 +225,8 @@
     <object-name>elevator</object-name>
     <property>surface-positions/elevator-pos-norm</property>
     <interpolation>
-      <entry><ind> -1 </ind><dep> -9.66 </dep></entry>
-      <entry><ind>  1 </ind><dep> 45.88 </dep></entry>
+      <entry><ind> -0.04 </ind><dep> -9.66 </dep></entry>
+      <entry><ind>  0.04 </ind><dep> 45.88 </dep></entry>
     </interpolation>
     <center>
       <x-m>  5.929 </x-m>
@@ -389,7 +323,7 @@
     </axis>
   </animation>
 
-  <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
+  <!-- Rotation de la roulette de queue en fonction de la gouverne de direction -->
   <animation>
     <name>TrainArriere</name>
     <object-name>roueA</object-name>
@@ -400,7 +334,7 @@
     <type>rotate</type>
     <object-name>TrainArriere</object-name>
     <property>surface-positions/rudder-pos-norm</property>
-    <factor>  10.0 </factor>
+    <factor> -10 </factor>
      <center>
        <x-m>  4.358 </x-m>
        <y-m>  0.000 </y-m>
@@ -465,4 +399,224 @@
     </axis>
   </animation>
 
+  <!-- Doors -->
+  <animation>
+    <name>PorteDroite</name>
+    <object-name>porteR</object-name>
+    <object-name>vitreD</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>PorteDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>PorteDroite</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> 70 </factor>
+    <center>
+      <x-m> -6.43255 </x-m>
+      <y-m>  1.12963 </y-m>
+      <z-m> -1.13138 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>PorteGauche</name>
+    <object-name>porteL</object-name>
+    <object-name>vitreG</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>PorteGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>PorteGauche</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> -70 </factor>
+    <center>
+      <x-m> -6.43255 </x-m>
+      <y-m> -1.12963 </y-m>
+      <z-m> -1.13138 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <!-- Windows -->
+  <animation>
+    <name>FenetresArrieres</name>
+    <object-name>windowL2</object-name>
+    <object-name>windowR2</object-name>
+    <object-name>glaceL2</object-name>
+    <object-name>glaceR2</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>FenetresArrieres</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.windows.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>FenetresArrieres</object-name>
+    <property>sim/model/door-positions/windows/position-norm</property>
+    <factor> -0.3 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>FenetresTotals</name>
+    <object-name>windowL1</object-name>
+    <object-name>windowL2</object-name>
+    <object-name>windowR1</object-name>
+    <object-name>windowR2</object-name>
+    <object-name>glaceL1</object-name>
+    <object-name>glaceL2</object-name>
+    <object-name>glaceR1</object-name>
+    <object-name>glaceR2</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>FenetresTotals</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.windows.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>FenetresTotals</object-name>
+    <property>sim/model/door-positions/windows/position-norm</property>
+    <factor> -0.3 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Cargo doors -->
+  <animation>
+    <name>PortesArrieres</name>
+    <object-name>doorL</object-name>
+    <object-name>doorR</object-name>
+    <object-name>glaceL</object-name>
+    <object-name>glaceR</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>PortesArrieres</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.bay.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>PortesArrieres</object-name>
+    <property>sim/model/door-positions/bay/position-norm</property>
+    <factor> 1.70 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- lights -->
+  <model>
+    <path>Aircraft/UH-60/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> 7.08889 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 1.72720 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/UH-60/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m>  2.93595 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -1.68836 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/UH-60/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -5.17406 </x-m>
+      <y-m> -1.44274 </y-m>
+      <z-m> -1.62065 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/UH-60/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -5.17406 </x-m>
+      <y-m>  1.44274 </y-m>
+      <z-m> -1.62065 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>

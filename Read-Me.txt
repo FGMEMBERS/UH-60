@@ -32,13 +32,14 @@ Shift+d : Bays
 Thanks
 ======
 
-Maik JUSTUS and Thomas REAGAN for the new FDM
-Detlef FABER for new texture and update FDM
-
 ===============
 BARANGER Emmanuel
-May 20, 2007. 
+May, 20, 2007
+July, 16, 2016
 
+http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
+embaranger@free.fr
 
 [Français]
 ----------
@@ -70,10 +71,12 @@ Shift+d : Baie
 
 Remerciements
 =============
-Maik JUSTUS et Thomas REAGAN pour le nouveau FDM
-Detlef FABER pour la nouvelle texture et les modifications sur le FDM
 
 ===============
 BARANGER Emmanuel
-20 Mai 2007.
+20 Mai 2007
+16 Juillet 2016
 
+http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
+embaranger@free.fr

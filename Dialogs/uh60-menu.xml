@@ -13,6 +13,17 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
+      <item>
+        <label>Blades visible</label>
+        <binding>
+          <command>nasal</command>
+          <script>
+            var p = "rotors/main/bladesvisible";
+            setprop(p, var i = !getprop(p));
+            gui.popupTip("Blades visible " ~ (i ? "On" : "Off"));
+          </script>
+        </binding>
+      </item>
 <!--
       <item>
         <label>Immatriculation</label>

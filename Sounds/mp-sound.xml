@@ -384,34 +384,6 @@
     
     <!-- Doors sounds -->
     <door>
-      <name>open and close crew door start inside</name>
-      <mode>once</mode>
-      <path>Aircraft/UH-60/Sounds/door_slide_close_end.wav</path>
-      <condition>
-        <less-than>
-          <property>sim/model/door-positions/crew/position-norm</property>
-          <value>0.02</value>
-        </less-than>
-      </condition>
-      <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
-    </door>
-    
-    <door>
-      <name>open and close crew door end inside</name>
-      <mode>once</mode>
-      <path>Aircraft/UH-60/Sounds/door_slide_open_start.wav</path>
-      <condition>
-        <greater-than>
-          <property>sim/model/door-positions/crew/position-norm</property>
-          <value>0.99</value>
-        </greater-than>
-      </condition>
-      <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
-    </door>
-    
-    <door>
       <name>open and close passenger door start inside</name>
       <mode>once</mode>
       <path>Aircraft/UH-60/Sounds/door_slide_close_end.wav</path>
@@ -440,12 +412,24 @@
     </door>
     
     <door>
-      <name>open and close windows door start inside</name>
+      <name>open and close passenger door INSIDE</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/UH-60/Sounds/door_slide_open_inside.wav</path>
+      <property>sim/model/door-positions/passenger/position-norm</property>
+      <volume>
+        <factor>0.5</factor>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>1000</max-dist>
+    </door>
+    
+    <door>
+      <name>open and close passenger door start EXTERIOR</name>
       <mode>once</mode>
       <path>Aircraft/UH-60/Sounds/door_slide_close_end.wav</path>
       <condition>
         <less-than>
-          <property>sim/model/door-positions/windows/position-norm</property>
+          <property>sim/model/door-positions/passenger/position-norm</property>
           <value>0.02</value>
         </less-than>
       </condition>
@@ -454,12 +438,12 @@
     </door>
     
     <door>
-      <name>open and close windows door end inside</name>
+      <name>open and close passenger door end EXTERIOR</name>
       <mode>once</mode>
       <path>Aircraft/UH-60/Sounds/door_slide_open_start.wav</path>
       <condition>
         <greater-than>
-          <property>sim/model/door-positions/windows/position-norm</property>
+          <property>sim/model/door-positions/passenger/position-norm</property>
           <value>0.99</value>
         </greater-than>
       </condition>
@@ -468,29 +452,13 @@
     </door>
     
     <door>
-      <name>open and close bay door start inside</name>
-      <mode>once</mode>
-      <path>Aircraft/UH-60/Sounds/door_slide_close_end.wav</path>
-      <condition>
-        <less-than>
-          <property>sim/model/door-positions/bay/position-norm</property>
-          <value>0.02</value>
-        </less-than>
-      </condition>
-      <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
-    </door>
-    
-    <door>
-      <name>open and close windows bay end inside</name>
-      <mode>once</mode>
-      <path>Aircraft/UH-60/Sounds/door_slide_open_start.wav</path>
-      <condition>
-        <greater-than>
-          <property>sim/model/door-positions/bay/position-norm</property>
-          <value>0.99</value>
-        </greater-than>
-      </condition>
+      <name>open and close passenger door EXTERIOR</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/UH-60/Sounds/door_slide_open.wav</path>
+      <property>sim/model/door-positions/passenger/position-norm</property>
+      <volume>
+        <factor>0.5</factor>
+      </volume>
       <reference-dist>10</reference-dist>
       <max-dist>1000</max-dist>
     </door>
