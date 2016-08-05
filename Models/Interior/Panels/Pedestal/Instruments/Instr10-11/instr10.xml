@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+  
+  <path>instr10.ac</path>
+  
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>base</object-name>
+    <object-name>switch1</object-name>
+    <object-name>switch2</object-name>
+    <object-name>switch3</object-name>
+    <object-name>switch4</object-name>
+    <object-name>switch5</object-name>
+    <object-name>switch6</object-name>
+    <object-name>switch7</object-name>
+  </animation>
+  
+</PropertyList>
