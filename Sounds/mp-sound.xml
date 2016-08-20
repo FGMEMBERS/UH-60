@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- thanks to the SAR simulation (GPL) for the helicopter sounds,
+     and the Urban game (LGPL) for the weapon sounds
+
+     +x = aft
+     +y = left
+     +z = up
+-->
+<PropertyList>
+  
+  <fx>
+    
+    <!-- Starting Engines -->
+    <starter>
+      <name>starter0_start</name>
+      <mode>once</mode>
+      <path>Aircraft/UH-60/Sounds/uh60_full_startup_sequence.wav</path>
+      <condition>
+        <greater-than>
+          <property>sim/model/uh60/state</property>
+          <value>0</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <factor>1</factor>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>5000</max-dist>
+    </starter>
+    
+    <engine>
+      <name>turbine1-loop</name>
+      <mode>looped</mode>
+      <path>Aircraft/UH-60/Sounds/uh60_turbine_loop.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>rotors/main/rpm</property>
+            <value>50</value>
+          </greater-than>
+          <greater-than>
+            <property>sim/model/uh60/state</property>
+            <value>1</value>
+          </greater-than>
+          <not>
+            <property>sim/crashed</property>
+          </not>
+        </and>
+      </condition>
+      <volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+        <factor>0.3</factor>
+      </volume>
+      <pitch>
+        <property>rotors/main/rpm</property>
+        <factor>0.003125</factor>
+        <offset>-0.0</offset>
+        <max>1.03</max>
+      </pitch>
+      <reference-dist>10</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+    
+    <starter-inside>
+      <name>starter0_start_inside</name>
+      <mode>once</mode>
+      <path>Aircraft/UH-60/Sounds/uh60_full_startup_sequence_inside.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>rotors/main/rpm</property>
+            <value>50</value>
+          </greater-than>
+          <not>
+            <property>sim/crashed</property>
+          </not>
+          <equals>
+            <property>sim/current-view/view-number</property>
+            <value>0</value>
+          </equals>
+        </and>
+      </condition>
+      <volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+      </volume>
+      <pitch>
+        <property>rotors/main/rpm</property>
+        <factor>0.00325</factor>
+        <offset>-0.0</offset>
+        <max>2.5</max>
+      </pitch>
+      <reference-dist>10</reference-dist>
+      <max-dist>5000</max-dist>
+    </starter-inside>
+    
+    <engine-inside>
+      <name>turbine1-loop-inside</name>
+      <mode>looped</mode>
+      <path>Aircraft/UH-60/Sounds/uh60_turbine_loop_inside.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>rotors/main/rpm</property>
+            <value>50</value>
+          </greater-than>
+          <not>
+            <property>sim/crashed</property>
+          </not>
+          <equals>
+            <property>sim/current-view/view-number</property>
+            <value>0</value>
+          </equals>
+        </and>
+      </condition>
+      <volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+      </volume>
+      <pitch>
+        <property>rotors/main/rpm</property>
+        <factor>0.00325</factor>
+        <offset>-0.0</offset>
+        <max>2.5</max>
+      </pitch>
+      <reference-dist>10</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine-inside>
+    
+    <shockfront>
+      <name>shockfront</name>
+      <mode>looped</mode>
+      <path>Aircraft/UH-60/Sounds/uh60_idle_outside_vortexinteraction_loop.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>rotors/main/rpm</property>
+            <value>50</value>
+          </greater-than>
+          <not>
+            <property>sim/crashed</property>
+          </not>
+          <not>
+            <equals>
+              <property>sim/current-view/view-number</property>
+              <value>0</value>
+            </equals>
+          </not>
+        </and>
+      </condition>
+      <volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+        <factor>0.75</factor>
+      </volume>
+      <pitch>
+        <property>rotors/tail/rpm</property>
+        <factor>0.0006</factor>
+        <offset>-0.0</offset>
+        <max>2.5</max>
+      </pitch>
+      <position>
+        <x> 0 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </position>
+      <orientation>
+        <x> -1 </x>
+        <y>  0 </y>
+        <z>  0 </z>
+        <inner-angle>30.0</inner-angle>
+        <outer-angle>90.0</outer-angle>
+        <outer-gain>0.1</outer-gain>
+      </orientation>
+      <reference-dist>25</reference-dist>
+      <max-dist>12000</max-dist>
+    </shockfront>
+    
+    <rotor>
+      <name>rotor-outside</name>
+      <mode>looped</mode>
+      <path>Aircraft/UH-60/Sounds/uh60_idle_outside_loop.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>rotors/main/rpm</property>
+            <value>50</value>
+          </greater-than>
+          <not>
+            <property>sim/crashed</property>
+          </not>
+          <not>
+            <equals>
+              <property>sim/current-view/view-number</property>
+              <value>0</value>
+            </equals>
+          </not>
+        </and>
+      </condition>
+      <volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+        <factor>0.75</factor>
+      </volume>
+      <pitch>
+        <property>rotors/tail/rpm</property>
+        <factor>0.0006</factor>
+        <offset>-0.0</offset>
+        <max>2.5</max>
+      </pitch>
+      <reference-dist>10</reference-dist>
+      <max-dist>5000</max-dist>
+    </rotor>
+    
+    <rotor>
+      <name>rotor-inside-LEFT</name>
+      <mode>looped</mode>
+      <path>Aircraft/UH-60/Sounds/uh60_inside_loop_L.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>rotors/main/rpm</property>
+            <value>50</value>
+          </greater-than>
+          <not>
+            <property>sim/crashed</property>
+          </not>
+          <equals>
+            <property>sim/current-view/view-number</property>
+            <value>0</value>
+          </equals>
+        </and>
+      </condition>
+      <volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+      </volume>
+      <pitch>
+        <property>rotors/main/rpm</property>
+        <factor>0.00325</factor>
+        <offset>-0.0</offset>
+        <max>2.5</max>
+      </pitch>
+      <position>
+        <x>  0 </x>
+        <y>  0 </y>
+        <z> -1 </z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </rotor>
+    
+    <rotor>
+      <name>rotor-inside-RIGHT</name>
+      <mode>looped</mode>
+      <path>Aircraft/UH-60/Sounds/uh60_inside_loop_R.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>rotors/main/rpm</property>
+            <value>50</value>
+          </greater-than>
+          <not>
+            <property>sim/crashed</property>
+          </not>
+          <equals>
+            <property>sim/current-view/view-number</property>
+            <value>0</value>
+          </equals>
+        </and>
+      </condition>
+      <volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+      </volume>
+      <pitch>
+        <property>rotors/main/rpm</property>
+        <factor>0.00325</factor>
+        <offset>-0.0</offset>
+        <max>2.5</max>
+      </pitch>
+      <position>
+        <x> 0 </x>
+        <y> 0 </y>
+        <z> 1 </z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </rotor>
+    
+    <engine-inside>
+      <name>engine-inside</name>
+      <mode>looped</mode>
+      <path>Aircraft/UH-60/Sounds/inflight_inside.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>rotors/main/rpm</property>
+            <value>50</value>
+          </greater-than>
+          <not>
+            <property>sim/crashed</property>
+          </not>
+          <equals>
+            <property>sim/current-view/view-number</property>
+            <value>0</value>
+          </equals>
+        </and>
+      </condition>
+      <volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+      </volume>
+      <pitch>
+        <property>rotors/main/rpm</property>
+        <factor>0.00325</factor>
+        <offset>-0.0</offset>
+        <max>2.5</max>
+      </pitch>
+      <reference-dist>1000</reference-dist>
+      <max-dist>3000</max-dist>
+    </engine-inside>
+    
+    <rotor>
+      <name>blade-vortex-interaction</name>
+      <mode>looped</mode>
+      <path>Aircraft/UH-60/Sounds/blade_vortex.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>rotors/main/rpm</property>
+            <value>50</value>
+          </greater-than>
+          <not>
+            <property>sim/crashed</property>
+          </not>
+          <not>
+            <equals>
+              <property>sim/current-view/view-number</property>
+              <value>0</value>
+            </equals>
+          </not>
+        </and>
+      </condition>
+      <volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+        <factor>0.75</factor>
+      </volume>
+      <pitch>
+        <property>rotors/tail/rpm</property>
+        <factor>0.0006</factor>
+        <offset>-0.0</offset>
+        <max>2.5</max>
+      </pitch>
+      <reference-dist>1000</reference-dist>
+      <max-dist>3000</max-dist>
+    </rotor>
+    
+    <vibration>
+      <name>vibration</name>
+      <mode>looped</mode>
+      <path>Aircraft/UH-60/Sounds/rattling_inside.wav</path>
+      <condition>
+        <and>
+          <greater-than>
+            <property>rotors/main/rpm</property>
+            <value>50</value>
+          </greater-than>
+          <not>
+            <property>sim/crashed</property>
+          </not>
+          <equals>
+            <property>sim/current-view/view-number</property>
+            <value>0</value>
+          </equals>
+        </and>
+      </condition>
+      <volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+      </volume>
+      <pitch>
+        <property>rotors/main/rpm</property>
+        <factor>0.00325</factor>
+        <offset>-0.0</offset>
+        <max>2.5</max>
+      </pitch>
+      <reference-dist>1000</reference-dist>
+      <max-dist>3000</max-dist>
+    </vibration>
+    
+    <!-- Doors sounds -->
+    <door>
+      <name>open and close passenger door start inside</name>
+      <mode>once</mode>
+      <path>Aircraft/UH-60/Sounds/door_slide_close_end.wav</path>
+      <condition>
+        <less-than>
+          <property>sim/model/door-positions/passenger/position-norm</property>
+          <value>0.02</value>
+        </less-than>
+      </condition>
+      <reference-dist>10</reference-dist>
+      <max-dist>1000</max-dist>
+    </door>
+    
+    <door>
+      <name>open and close passenger door end inside</name>
+      <mode>once</mode>
+      <path>Aircraft/UH-60/Sounds/door_slide_open_start.wav</path>
+      <condition>
+        <greater-than>
+          <property>sim/model/door-positions/passenger/position-norm</property>
+          <value>0.99</value>
+        </greater-than>
+      </condition>
+      <reference-dist>10</reference-dist>
+      <max-dist>1000</max-dist>
+    </door>
+    
+    <door>
+      <name>open and close passenger door INSIDE</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/UH-60/Sounds/door_slide_open_inside.wav</path>
+      <property>sim/model/door-positions/passenger/position-norm</property>
+      <volume>
+        <factor>0.5</factor>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>1000</max-dist>
+    </door>
+    
+    <door>
+      <name>open and close passenger door start EXTERIOR</name>
+      <mode>once</mode>
+      <path>Aircraft/UH-60/Sounds/door_slide_close_end.wav</path>
+      <condition>
+        <less-than>
+          <property>sim/model/door-positions/passenger/position-norm</property>
+          <value>0.02</value>
+        </less-than>
+      </condition>
+      <reference-dist>10</reference-dist>
+      <max-dist>1000</max-dist>
+    </door>
+    
+    <door>
+      <name>open and close passenger door end EXTERIOR</name>
+      <mode>once</mode>
+      <path>Aircraft/UH-60/Sounds/door_slide_open_start.wav</path>
+      <condition>
+        <greater-than>
+          <property>sim/model/door-positions/passenger/position-norm</property>
+          <value>0.99</value>
+        </greater-than>
+      </condition>
+      <reference-dist>10</reference-dist>
+      <max-dist>1000</max-dist>
+    </door>
+    
+    <door>
+      <name>open and close passenger door EXTERIOR</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/UH-60/Sounds/door_slide_open.wav</path>
+      <property>sim/model/door-positions/passenger/position-norm</property>
+      <volume>
+        <factor>0.5</factor>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>1000</max-dist>
+    </door>
+    
+  </fx>
+  
+</PropertyList>
