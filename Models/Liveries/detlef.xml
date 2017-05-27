@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <sim>
+
+    <model>
+      <livery>
+        <name type="string">Detlef</name>
+        <texture>Liveries/1024x1024/uh60-1.png</texture>
+        <specular>
+          <red>   0.05 </red>
+          <green> 0.05 </green>
+          <blue>  0.05 </blue>
+        </specular>
+      </livery>
+    </model>
+
+  </sim>
+
+</PropertyList>

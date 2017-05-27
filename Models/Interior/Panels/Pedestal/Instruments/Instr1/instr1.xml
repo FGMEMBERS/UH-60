@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>instr1.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>screen</object-name>
+    <object-name>clr</object-name>
+    <object-name>nxt</object-name>
+    <object-name>dim</object-name>
+    <object-name>a</object-name>
+    <object-name>b</object-name>
+    <object-name>c</object-name>
+    <object-name>d</object-name>
+    <object-name>e</object-name>
+    <object-name>f</object-name>
+    <object-name>g</object-name>
+    <object-name>h</object-name>
+    <object-name>i</object-name>
+    <object-name>j</object-name>
+    <object-name>k</object-name>
+    <object-name>l</object-name>
+    <object-name>m</object-name>
+    <object-name>n</object-name>
+    <object-name>o</object-name>
+    <object-name>p</object-name>
+    <object-name>q</object-name>
+    <object-name>r</object-name>
+    <object-name>s</object-name>
+    <object-name>t</object-name>
+    <object-name>u</object-name>
+    <object-name>v</object-name>
+    <object-name>w</object-name>
+    <object-name>x</object-name>
+    <object-name>y</object-name>
+    <object-name>z</object-name>
+    <object-name>cau</object-name>
+    <object-name>adv</object-name>
+    <object-name>sts</object-name>
+    <object-name>msg</object-name>
+    <object-name>cdu</object-name>
+    <object-name>ltr</object-name>
+    <object-name>ent</object-name>
+    <object-name>bt1</object-name>
+    <object-name>bt2</object-name>
+    <object-name>bt3</object-name>
+    <object-name>bt4</object-name>
+    <object-name>bt5</object-name>
+    <object-name>bt6</object-name>
+    <object-name>bt7</object-name>
+    <object-name>bt8</object-name>
+    <object-name>bt9</object-name>
+    <object-name>bt10</object-name>
+  </animation>
+
+</PropertyList>
